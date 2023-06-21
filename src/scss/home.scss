@@ -1,0 +1,320 @@
+.utp {
+    padding: 40px 0px;
+
+    // .utp__container
+    &__container {}
+
+    // .utp__body
+    &__body {
+        background-image: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background-attachment: fixed;
+        // background-position: center;
+        position: relative;
+        padding: 120px 40px;
+        border-radius: 25px;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: $mainColor, $alpha: .8);
+            z-index: 0;
+        }
+    }
+
+    // .utp__title
+    &__title {
+        font-size: 48px;
+        max-width: 700px;
+        color: $white;
+        font-weight: 700;
+        line-height: 120%;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 30px;
+    }
+
+    // .utp__subtitle
+    &__subtitle {
+        font-size: 25px;
+        position: relative;
+        z-index: 1;
+        color: $white;
+        margin-bottom: 40px;
+
+        span {
+            font-weight: 600;
+            color: $accent;
+        }
+    }
+
+    // .utp__btns
+    &__btns {
+        position: relative;
+        z-index: 1;
+    }
+
+    // .utp__btn
+    &__btn {
+        border: 2px solid $accent;
+        border-radius: 3px;
+        padding: 15px 35px;
+        font-weight: 600;
+        color: $white;
+        font-size: 18px;
+
+        &--accent {
+            margin-right: 30px;
+            background-color: $accent;
+            color: $white;
+        }
+    }
+}
+
+.promotion {
+    padding: 40px 0px;
+
+    // .promotion__container
+    &__container {}
+
+    // .promotion__title
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    // .promotion__body
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 230px);
+        gap: 30px;
+    }
+
+    // .promotion__item
+    &__item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            max-width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        &--two {
+            grid-column: 2 / 3;
+            grid-row: 1 / -1;
+            height: 100%;
+
+        }
+    }
+
+    // .promotion__item--title
+    &__item--title {
+        font-size: 22px;
+        line-height: 140%;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    // .promotion__item--text
+    &__item--text {
+        font-size: 16px;
+        line-height: 140%;
+        max-width: 200px;
+        flex: 1 1 auto;
+    }
+
+    // .promotion__date
+    &__date {
+        color: rgba($color: $mainColor, $alpha: .5);
+    }
+}
+
+.service {
+    padding: 40px 0px;
+
+    // .service__container
+    &__container {}
+
+    // .service__top
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    // .service__title
+    &__title {}
+
+    // .service__link
+    &__link {
+        border: 2px solid $accent;
+        color: $accent;
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 3px;
+    }
+
+    // .service__body
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 20px;
+    }
+
+    // .service__card
+    &__card {}
+}
+
+.card-service {
+    position: relative;
+    min-height: 300px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid rgba($color: $mainColor, $alpha: .1);
+    border-radius: 3px;
+
+    &:hover {
+        box-shadow: 0px 0px 5px 0px rgba($color: $mainColor, $alpha: .1);
+    }
+
+    // .card-service__title
+    &__title {
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        align-self: flex-start;
+        transition: .3s;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    // .card-service__price
+    &__price {
+        font-size: 20px;
+        font-weight: 600;
+        color: $white;
+        height: 30px;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $blue;
+        margin-bottom: 30px;
+        border-radius: 3px;
+    }
+
+    // .card-service__image
+    &__image {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    // .card-service__btn
+    &__btn {
+        font-size: 16px;
+        font-weight: 600;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $accent;
+        border: 2px solid $accent;
+        transition: .3s;
+        border-radius: 3px;
+
+        &:hover {
+            background-color: $accent;
+            color: $white;
+        }
+    }
+}
+
+.stage {
+    padding: 40px 0px;
+    overflow: hidden;
+
+    // .stage__container
+    &__container {}
+
+    // .stage__body
+    &__body {
+        display: flex;
+    }
+
+    // .stage__col
+    &__col {
+
+        &--left {
+            position: relative;
+            flex: 1 1 50%;
+
+            img {
+                position: absolute;
+                left: -55%;
+                top: 0%;
+            }
+        }
+
+        &--right {}
+    }
+
+    // .stage__title
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    // .stage__row
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        gap: 30px;
+    }
+
+    // .stage__item
+    &__item {
+
+        img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        &--title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        &--text {
+            line-height: 150%;
+        }
+
+
+    }
+}
