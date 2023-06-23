@@ -3,12 +3,34 @@
     // grid-template-columns: 420px 1fr;
 }
 
-.wrapper {
-    margin-left: 250px;
-}
+.wrapper {}
 
 ._title {
     font-size: 25px;
     font-weight: 900;
     line-height: 140%;
+}
+
+.intermittent {
+    width: 53px;
+    display: grid;
+    grid-template-columns: 5px 1fr 5px;
+    gap: 5px;
+
+    span {
+        background-color: $accent;
+        height: 4px;
+
+        &:first-child {
+            width: 5px;
+        }
+
+        &:nth-child(2) {
+            width: 100%;
+        }
+
+        &:last-child {
+            width: 5px;
+        }
+    }
 }
