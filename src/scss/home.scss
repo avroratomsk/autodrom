@@ -284,7 +284,7 @@
     // .hidden-content__link
     &__link {
         font-size: 17px;
-        display: flex;
+        display: inline-flex;
         color: rgba($color: $grey, $alpha: .7);
         text-decoration: underline !important;
         transition: $animation_speed;
@@ -1193,4 +1193,44 @@
             background-color: rgba($color: $accent, $alpha: .9);
         }
     }
+}
+
+.contact {
+    min-height: 500px;
+    position: relative;
+    left: 0%;
+
+    .mega-menu__body {
+        height: 100%;
+        min-height: 650px;
+    }
+
+    .hidden-content__address {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .hidden-content__phone {
+        font-size: 27px;
+        margin-top: 40px;
+        font-weight: 600;
+    }
+
+    .intermittent {
+        position: relative;
+        z-index: 1;
+    }
+
+    // .contact__title
+    &__title {
+        position: relative;
+        z-index: 1;
+        color: $white;
+    }
+
+    .mega-menu__col--image {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
 }

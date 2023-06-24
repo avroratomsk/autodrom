@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"Главная"
-})
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230625020209">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230625020209" rel="stylesheet">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css?_v=20230625020209" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+
 		<main class="page">
 
 			<div class="mega-menu">
@@ -19,28 +29,19 @@
 					</div>
 					<div class="mega-menu__col mega-menu__col--tab">
 						<button class="mega-menu__close">
-							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-								data-prefix="icwaqhbdy">
-								<path
-									d="M14 1.4L12.6 0 7 5.6 1.4 0 0 1.4 5.6 7 0 12.6 1.4 14 7 8.4l5.6 5.6 1.4-1.4L8.4 7z"
-									fill-rule="evenodd" class="path-iepp1dv8l"></path>
+							<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" data-prefix="icwaqhbdy">
+								<path d="M14 1.4L12.6 0 7 5.6 1.4 0 0 1.4 5.6 7 0 12.6 1.4 14 7 8.4l5.6 5.6 1.4-1.4L8.4 7z" fill-rule="evenodd" class="path-iepp1dv8l"></path>
 							</svg>
 						</button>
 						<div class="tab__trigger--content">
 							<button type="button" class="tab__trigger _active" data-id="menu">
-								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16"
-									data-prefix="iw0oj93tj">
-									<path
-										d="M5 16v-2h20v2H5zm0-9h20v2H5V7zm0-7h20v2H5V0zM0 14h2v2H0v-2zm0-7h2v2H0V7zm0-7h2v2H0V0z"
-										fill-rule="evenodd" class="path-iwnhi8qxz"></path>
+								<svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16" data-prefix="iw0oj93tj">
+									<path d="M5 16v-2h20v2H5zm0-9h20v2H5V7zm0-7h20v2H5V0zM0 14h2v2H0v-2zm0-7h2v2H0V7zm0-7h2v2H0V0z" fill-rule="evenodd" class="path-iwnhi8qxz"></path>
 								</svg>
 							</button>
 							<button type="button" class="tab__trigger " data-id="message">
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18"
-									data-prefix="isxpoteq8">
-									<path
-										d="M23 18H1a1 1 0 0 1-1-1V7.5L2 9v6a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V9.042l2-1.5V17a1 1 0 0 1-1 1zm0-12.81L12 12v-.5L1 5a.981.981 0 0 1-1-.96V.96A.981.981 0 0 1 1 0h22a.981.981 0 0 1 1 .96v3.225a1 1 0 0 1-1 1.005zm-2-3.27H3a.981.981 0 0 0-1 .96v.24a.981.981 0 0 0 1 .96l9 5.5v.361l9-5.762a1 1 0 0 0 1-1.006V2.88a.981.981 0 0 0-1-.96z"
-										fill-rule="evenodd" class="path-i31kajh5h">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" data-prefix="isxpoteq8">
+									<path d="M23 18H1a1 1 0 0 1-1-1V7.5L2 9v6a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V9.042l2-1.5V17a1 1 0 0 1-1 1zm0-12.81L12 12v-.5L1 5a.981.981 0 0 1-1-.96V.96A.981.981 0 0 1 1 0h22a.981.981 0 0 1 1 .96v3.225a1 1 0 0 1-1 1.005zm-2-3.27H3a.981.981 0 0 0-1 .96v.24a.981.981 0 0 0 1 .96l9 5.5v.361l9-5.762a1 1 0 0 0 1-1.006V2.88a.981.981 0 0 0-1-.96z" fill-rule="evenodd" class="path-i31kajh5h">
 									</path>
 								</svg>
 							</button>
@@ -105,8 +106,7 @@
 										<input type="text" class="form__input" placeholder="Ваше имя" name="name">
 										<input type="tel" class="form__input" placeholder="Ваш номер" name="phone">
 										<input type="text" class="form__input" placeholder="Марка авто" name="marka">
-										<input type="text" class="form__input" placeholder="Год выпуска авто"
-											name="year">
+										<input type="text" class="form__input" placeholder="Год выпуска авто" name="year">
 										<select name="engine" id="engine" class="form__select">
 											<option value="">Ремонт двигателя</option>
 											<option value="">Ремонт двигателя</option>
@@ -136,7 +136,7 @@
 						<div class="utp__col utp__col--left">
 							<div class="utp__header header-utp">
 								<div class="header-utp__logo">
-									<img src="@img/logo.png" alt="">
+									<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
 								</div>
 								<div class="header-utp__action">
 									<a href="tel:89999999999" class="header-utp__phone">8(999) 999 99 99</a>
@@ -165,11 +165,8 @@
 									</div>
 									<button class="header-utp__btn--red">Заказать запчасть</button>
 									<button type="button" class="header-utp__burger">
-										<svg xmlns="http://www.w3.org/2000/svg" width="25" height="16"
-											viewBox="0 0 25 16" data-prefix="i23ij7zz6">
-											<path
-												d="M5 16v-2h20v2H5zm0-9h20v2H5V7zm0-7h20v2H5V0zM0 14h2v2H0v-2zm0-7h2v2H0V7zm0-7h2v2H0V0z"
-												fill-rule="evenodd" class="path-i613b4xe4"></path>
+										<svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16" data-prefix="i23ij7zz6">
+											<path d="M5 16v-2h20v2H5zm0-9h20v2H5V7zm0-7h20v2H5V0zM0 14h2v2H0v-2zm0-7h2v2H0V7zm0-7h2v2H0V0z" fill-rule="evenodd" class="path-i613b4xe4"></path>
 										</svg>
 									</button>
 								</div>
@@ -184,7 +181,7 @@
 								Ремонт и техническое обслуживание всех марок автомобилей в городе Сургут
 							</p>
 						</div>
-						<img src="@img/shap.jpg" alt="" class="utp__image">
+						<picture><source srcset="img/shap.webp" type="image/webp"><img src="img/shap.jpg" alt="" class="utp__image"></picture>
 					</div>
 					<div class="utp__content">
 						<div class="blue-block"></div>
@@ -192,7 +189,7 @@
 							<div class="utp__wrapper swiper-wrapper">
 								<div class="utp__slide swiper-slide">
 									<div class="utp__slide--img">
-										<img src="@img/aksshap2.jpg" alt="">
+										<picture><source srcset="img/aksshap2.webp" type="image/webp"><img src="img/aksshap2.jpg" alt=""></picture>
 									</div>
 									<div class="utp__slide--content">
 										<h3 class="utp__slide--title">Бесплатная замена масла</h3>
@@ -205,7 +202,7 @@
 								</div>
 								<div class="utp__slide swiper-slide">
 									<div class="utp__slide--img">
-										<img src="@img/aksshap2.jpg" alt="">
+										<picture><source srcset="img/aksshap2.webp" type="image/webp"><img src="img/aksshap2.jpg" alt=""></picture>
 									</div>
 									<div class="utp__slide--content">
 										<h3 class="utp__slide--title">Бесплатная замена масла</h3>
@@ -240,7 +237,7 @@
 						<div class="service__card card-service">
 							<div class="card-service__top">
 								<div class="card-service__icon">
-									<img src="@img/icon/u1.svg" alt="">
+									<img src="img/icon/u1.svg" alt="">
 								</div>
 								<a href="#" class="card-service__title">Ремонт двигателя</a>
 								<p class="card-service__text">
@@ -254,7 +251,7 @@
 						<div class="service__card card-service">
 							<div class="card-service__top">
 								<div class="card-service__icon">
-									<img src="@img/icon/u1.svg" alt="">
+									<img src="img/icon/u1.svg" alt="">
 								</div>
 								<a href="#" class="card-service__title">Ремонт двигателя</a>
 								<p class="card-service__text">
@@ -268,7 +265,7 @@
 						<div class="service__card card-service">
 							<div class="card-service__top">
 								<div class="card-service__icon">
-									<img src="@img/icon/u1.svg" alt="">
+									<img src="img/icon/u1.svg" alt="">
 								</div>
 								<a href="#" class="card-service__title">Ремонт двигателя</a>
 								<p class="card-service__text">
@@ -282,7 +279,7 @@
 						<div class="service__card card-service">
 							<div class="card-service__top">
 								<div class="card-service__icon">
-									<img src="@img/icon/u1.svg" alt="">
+									<img src="img/icon/u1.svg" alt="">
 								</div>
 								<a href="#" class="card-service__title">Ремонт двигателя</a>
 								<p class="card-service__text">
@@ -296,7 +293,7 @@
 						<div class="service__card card-service">
 							<div class="card-service__top">
 								<div class="card-service__icon">
-									<img src="@img/icon/u1.svg" alt="">
+									<img src="img/icon/u1.svg" alt="">
 								</div>
 								<a href="#" class="card-service__title">Ремонт двигателя</a>
 								<p class="card-service__text">
@@ -310,7 +307,7 @@
 						<div class="service__card card-service">
 							<div class="card-service__top">
 								<div class="card-service__icon">
-									<img src="@img/icon/u1.svg" alt="">
+									<img src="img/icon/u1.svg" alt="">
 								</div>
 								<a href="#" class="card-service__title">Ремонт двигателя</a>
 								<p class="card-service__text">
@@ -416,7 +413,7 @@
 			</div>
 
 			<div class="edge _padding-section">
-				<div class="edge__row" style="background-image: url(../img/shap.jpg);">
+				<div class="edge__row" style="background-image: url(img/shap.jpg);">
 					<div class="edge__container">
 						<div class="intermittent">
 							<span class="intermittent__one"></span>
@@ -434,7 +431,7 @@
 						<div class="edge__body">
 							<div class="edge__card">
 								<div class="edge__icon">
-									<img src="@img/icon/preim11.svg" alt="">
+									<img src="img/icon/preim11.svg" alt="">
 								</div>
 								<div class="edge__content">
 									<p class="edge__title--card">Полный спектр услуг</p>
@@ -446,7 +443,7 @@
 
 							<div class="edge__card">
 								<div class="edge__icon">
-									<img src="@img/icon/preim22.svg" alt="">
+									<img src="img/icon/preim22.svg" alt="">
 								</div>
 								<div class="edge__content">
 									<p class="edge__title--card">Гарантия на работу</p>
@@ -458,7 +455,7 @@
 
 							<div class="edge__card">
 								<div class="edge__icon">
-									<img src="@img/icon/preim33.svg" alt="">
+									<img src="img/icon/preim33.svg" alt="">
 								</div>
 								<div class="edge__content">
 									<p class="edge__title--card">Всегда точно в срок</p>
@@ -470,7 +467,7 @@
 
 							<div class="edge__card">
 								<div class="edge__icon">
-									<img src="@img/icon/preim44.svg" alt="">
+									<img src="img/icon/preim44.svg" alt="">
 								</div>
 								<div class="edge__content">
 									<p class="edge__title--card">Честные цены</p>
@@ -484,7 +481,7 @@
 				</div>
 			</div>
 
-			<div class="enroll" style="background-image: url(../img/shap.jpg);">
+			<div class="enroll" style="background-image: url(img/shap.jpg);">
 				<div class="enroll__container">
 					<div class="enroll__body">
 						<div class="enroll__col">
@@ -523,11 +520,8 @@
 								<div data-spollers class="spollers">
 									<div class="spollers__item">
 										<button type="button" data-spoller class="spollers__title">
-											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32"
-												viewBox="0 0 42 32" data-prefix="ie7zl625o">
-												<path
-													d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z"
-													fill-rule="evenodd" class="path-i4rh1hk96"></path>
+											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32" data-prefix="ie7zl625o">
+												<path d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z" fill-rule="evenodd" class="path-i4rh1hk96"></path>
 											</svg>
 											Ремонт ходовой части
 										</button>
@@ -553,11 +547,8 @@
 
 									<div class="spollers__item">
 										<button type="button" data-spoller class="spollers__title">
-											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32"
-												viewBox="0 0 42 32" data-prefix="ie7zl625o">
-												<path
-													d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z"
-													fill-rule="evenodd" class="path-i4rh1hk96"></path>
+											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32" data-prefix="ie7zl625o">
+												<path d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z" fill-rule="evenodd" class="path-i4rh1hk96"></path>
 											</svg>
 											Ремонт подвески
 										</button>
@@ -583,11 +574,8 @@
 
 									<div class="spollers__item">
 										<button type="button" data-spoller class="spollers__title">
-											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32"
-												viewBox="0 0 42 32" data-prefix="ie7zl625o">
-												<path
-													d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z"
-													fill-rule="evenodd" class="path-i4rh1hk96"></path>
+											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32" data-prefix="ie7zl625o">
+												<path d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z" fill-rule="evenodd" class="path-i4rh1hk96"></path>
 											</svg>
 											Замена технических жидкостей
 										</button>
@@ -616,11 +604,8 @@
 								<div data-spollers class="spollers">
 									<div class="spollers__item">
 										<button type="button" data-spoller class="spollers__title">
-											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32"
-												viewBox="0 0 42 32" data-prefix="ie7zl625o">
-												<path
-													d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z"
-													fill-rule="evenodd" class="path-i4rh1hk96"></path>
+											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32" data-prefix="ie7zl625o">
+												<path d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z" fill-rule="evenodd" class="path-i4rh1hk96"></path>
 											</svg>
 											Плановое ТО
 										</button>
@@ -646,11 +631,8 @@
 
 									<div class="spollers__item">
 										<button type="button" data-spoller class="spollers__title">
-											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32"
-												viewBox="0 0 42 32" data-prefix="ie7zl625o">
-												<path
-													d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z"
-													fill-rule="evenodd" class="path-i4rh1hk96"></path>
+											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32" data-prefix="ie7zl625o">
+												<path d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z" fill-rule="evenodd" class="path-i4rh1hk96"></path>
 											</svg>
 											Электрика
 										</button>
@@ -676,11 +658,8 @@
 
 									<div class="spollers__item">
 										<button type="button" data-spoller class="spollers__title">
-											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32"
-												viewBox="0 0 42 32" data-prefix="ie7zl625o">
-												<path
-													d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z"
-													fill-rule="evenodd" class="path-i4rh1hk96"></path>
+											<svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 32" data-prefix="ie7zl625o">
+												<path d="M11.6 31.99l11.68-15.96L11.6-.01H0l11.35 16.04L0 31.99h11.6zm18.72 0L42 16.03 30.32-.01h-11.6l11.35 16.04-11.35 15.96h11.6z" fill-rule="evenodd" class="path-i4rh1hk96"></path>
 											</svg>
 											Ремонт ДВС
 										</button>
@@ -720,7 +699,7 @@
 				</div>
 			</div>
 
-			<div class="coast _padding-section" style="background-image: url(../img/shap.jpg);">
+			<div class="coast _padding-section" style="background-image: url(img/shap.jpg);">
 				<div class="coast__container">
 					<div class="coast__body">
 						<h2 class="coast__title _title">Расчитать стоимость ремонта</h2>
@@ -752,7 +731,7 @@
 						<div class="action__row">
 							<div class="action__card card-action">
 								<a href="#" class="card-action__img">
-									<img src="@img/news1.jpg" alt="">
+									<picture><source srcset="img/news1.webp" type="image/webp"><img src="img/news1.jpg" alt=""></picture>
 								</a>
 								<div class="card-action__middle">
 									<a href="#" class="card-action__title">Диагностика подвески</a>
@@ -770,7 +749,7 @@
 
 							<div class="action__card card-action">
 								<a href="#" class="card-action__img">
-									<img src="@img/news1.jpg" alt="">
+									<picture><source srcset="img/news1.webp" type="image/webp"><img src="img/news1.jpg" alt=""></picture>
 								</a>
 								<div class="card-action__middle">
 									<a href="#" class="card-action__title">Диагностика подвески</a>
@@ -788,7 +767,7 @@
 
 							<div class="action__card card-action">
 								<a href="#" class="card-action__img">
-									<img src="@img/news1.jpg" alt="">
+									<picture><source srcset="img/news1.webp" type="image/webp"><img src="img/news1.jpg" alt=""></picture>
 								</a>
 								<div class="card-action__middle">
 									<a href="#" class="card-action__title">Диагностика подвески</a>
@@ -831,18 +810,13 @@
 						<div class="tab__trigger--content">
 							<button type="button" class="tab__trigger _active" data-id="message">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18" data-prefix="isxpoteq8">
-									<path
-										d="M23 18H1a1 1 0 0 1-1-1V7.5L2 9v6a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V9.042l2-1.5V17a1 1 0 0 1-1 1zm0-12.81L12 12v-.5L1 5a.981.981 0 0 1-1-.96V.96A.981.981 0 0 1 1 0h22a.981.981 0 0 1 1 .96v3.225a1 1 0 0 1-1 1.005zm-2-3.27H3a.981.981 0 0 0-1 .96v.24a.981.981 0 0 0 1 .96l9 5.5v.361l9-5.762a1 1 0 0 0 1-1.006V2.88a.981.981 0 0 0-1-.96z"
-										fill-rule="evenodd" class="path-i31kajh5h">
+									<path d="M23 18H1a1 1 0 0 1-1-1V7.5L2 9v6a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V9.042l2-1.5V17a1 1 0 0 1-1 1zm0-12.81L12 12v-.5L1 5a.981.981 0 0 1-1-.96V.96A.981.981 0 0 1 1 0h22a.981.981 0 0 1 1 .96v3.225a1 1 0 0 1-1 1.005zm-2-3.27H3a.981.981 0 0 0-1 .96v.24a.981.981 0 0 0 1 .96l9 5.5v.361l9-5.762a1 1 0 0 0 1-1.006V2.88a.981.981 0 0 0-1-.96z" fill-rule="evenodd" class="path-i31kajh5h">
 									</path>
 								</svg>
 							</button>
 							<button type="button" class="tab__trigger" data-id="menu">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.281 68.562"
-									data-prefix="imjg344p3">
-									<path
-										d="M59.145 68.569h-51a8.145 8.145 0 0 1-8.131-8.141 7.827 7.827 0 0 1 2.379-5.623 8.123 8.123 0 0 1-2.379-5.749V8.138A8.145 8.145 0 0 1 8.145-.003h7.854a8.1 8.1 0 0 1 5.824 2.469 8.1 8.1 0 0 1 5.825-2.469h31.5a8.146 8.146 0 0 1 8.131 8.141v52.29a8.145 8.145 0 0 1-8.134 8.141zM19.513 8.138a3.525 3.525 0 0 0-3.519-3.523H8.14a3.525 3.525 0 0 0-3.519 3.523v40.918A3.525 3.525 0 0 0 8.14 52.58h7.854a3.526 3.526 0 0 0 3.519-3.524V8.138zm43.151 0a3.525 3.525 0 0 0-3.519-3.523h-31.5a3.525 3.525 0 0 0-3.519 3.523v40.918a8.145 8.145 0 0 1-8.13 8.142H7.85a3.232 3.232 0 0 0-3.227 3.23 3.525 3.525 0 0 0 3.519 3.524h51.005a3.526 3.526 0 0 0 3.519-3.524V8.138zm-7.446 47.25h-1.752a2.309 2.309 0 0 1 0-4.618h1.752a2.309 2.309 0 0 1 0 4.618zm0-9.825h-1.752a2.309 2.309 0 0 1 0-4.618h1.752a2.309 2.309 0 0 1 0 4.618zm0-9.826h-1.752a2.309 2.309 0 0 1 0-4.617h1.752a2.309 2.309 0 0 1 0 4.617zm-2.52-9.824H33.846a4.834 4.834 0 0 1-4.826-4.832v-4.658a4.834 4.834 0 0 1 4.826-4.831h18.852a4.834 4.834 0 0 1 4.826 4.831v4.658a4.834 4.834 0 0 1-4.826 4.832zm.214-9.489a.213.213 0 0 0-.214-.214H33.846a.214.214 0 0 0-.214.214v4.657a.214.214 0 0 0 .214.214h18.852a.214.214 0 0 0 .214-.214v-4.658zm-21.586 14.7h1.753a2.309 2.309 0 0 1 0 4.617h-1.753a2.31 2.31 0 0 1 0-4.621zm0 9.825h1.753a2.309 2.309 0 0 1 0 4.618h-1.753a2.311 2.311 0 0 1 0-4.622zm0 9.825h1.753a2.309 2.309 0 0 1 0 4.618h-1.753a2.311 2.311 0 0 1 0-4.622zm11.07-19.65h1.752a2.309 2.309 0 0 1 0 4.617h-1.752a2.31 2.31 0 0 1 0-4.621zm0 9.825h1.752a2.309 2.309 0 0 1 0 4.618h-1.752a2.311 2.311 0 0 1 0-4.622zm0 9.825h1.752a2.309 2.309 0 0 1 0 4.618h-1.752a2.311 2.311 0 0 1 0-4.622z"
-										fill-rule="evenodd" class="path-iowfi9n3u"></path>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.281 68.562" data-prefix="imjg344p3">
+									<path d="M59.145 68.569h-51a8.145 8.145 0 0 1-8.131-8.141 7.827 7.827 0 0 1 2.379-5.623 8.123 8.123 0 0 1-2.379-5.749V8.138A8.145 8.145 0 0 1 8.145-.003h7.854a8.1 8.1 0 0 1 5.824 2.469 8.1 8.1 0 0 1 5.825-2.469h31.5a8.146 8.146 0 0 1 8.131 8.141v52.29a8.145 8.145 0 0 1-8.134 8.141zM19.513 8.138a3.525 3.525 0 0 0-3.519-3.523H8.14a3.525 3.525 0 0 0-3.519 3.523v40.918A3.525 3.525 0 0 0 8.14 52.58h7.854a3.526 3.526 0 0 0 3.519-3.524V8.138zm43.151 0a3.525 3.525 0 0 0-3.519-3.523h-31.5a3.525 3.525 0 0 0-3.519 3.523v40.918a8.145 8.145 0 0 1-8.13 8.142H7.85a3.232 3.232 0 0 0-3.227 3.23 3.525 3.525 0 0 0 3.519 3.524h51.005a3.526 3.526 0 0 0 3.519-3.524V8.138zm-7.446 47.25h-1.752a2.309 2.309 0 0 1 0-4.618h1.752a2.309 2.309 0 0 1 0 4.618zm0-9.825h-1.752a2.309 2.309 0 0 1 0-4.618h1.752a2.309 2.309 0 0 1 0 4.618zm0-9.826h-1.752a2.309 2.309 0 0 1 0-4.617h1.752a2.309 2.309 0 0 1 0 4.617zm-2.52-9.824H33.846a4.834 4.834 0 0 1-4.826-4.832v-4.658a4.834 4.834 0 0 1 4.826-4.831h18.852a4.834 4.834 0 0 1 4.826 4.831v4.658a4.834 4.834 0 0 1-4.826 4.832zm.214-9.489a.213.213 0 0 0-.214-.214H33.846a.214.214 0 0 0-.214.214v4.657a.214.214 0 0 0 .214.214h18.852a.214.214 0 0 0 .214-.214v-4.658zm-21.586 14.7h1.753a2.309 2.309 0 0 1 0 4.617h-1.753a2.31 2.31 0 0 1 0-4.621zm0 9.825h1.753a2.309 2.309 0 0 1 0 4.618h-1.753a2.311 2.311 0 0 1 0-4.622zm0 9.825h1.753a2.309 2.309 0 0 1 0 4.618h-1.753a2.311 2.311 0 0 1 0-4.622zm11.07-19.65h1.752a2.309 2.309 0 0 1 0 4.617h-1.752a2.31 2.31 0 0 1 0-4.621zm0 9.825h1.752a2.309 2.309 0 0 1 0 4.618h-1.752a2.311 2.311 0 0 1 0-4.622zm0 9.825h1.752a2.309 2.309 0 0 1 0 4.618h-1.752a2.311 2.311 0 0 1 0-4.622z" fill-rule="evenodd" class="path-iowfi9n3u"></path>
 								</svg>
 							</button>
 						</div>
@@ -884,8 +858,7 @@
 										<input type="text" class="form__input" placeholder="Ваше имя" name="name">
 										<input type="tel" class="form__input" placeholder="Ваш номер" name="phone">
 										<input type="text" class="form__input" placeholder="Марка авто" name="marka">
-										<input type="text" class="form__input" placeholder="Год выпуска авто"
-											name="year">
+										<input type="text" class="form__input" placeholder="Год выпуска авто" name="year">
 										<select name="engine" id="engine" class="form__select">
 											<option value="">Ремонт двигателя</option>
 											<option value="">Ремонт двигателя</option>
@@ -910,10 +883,18 @@
 
 
 		</main>
-		@@include('html/_footer.htm',{})
+		<footer class="footer">
+			<div class="footer__container">
+
+			</div>
+		</footer>
 	</div>
-	@@include('html/_popup.htm',{})
-	@@include('html/_js.htm',{})
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230625020209"></script>
 </body>
 
 </html>
