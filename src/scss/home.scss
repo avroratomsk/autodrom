@@ -564,3 +564,83 @@
         }
     }
 }
+
+.stage {
+
+    // .stage__container
+    &__container {}
+
+    // .stage__body
+    &__body {}
+
+    // .stage__title
+    &__title {
+        margin: 26px 0px 13px;
+    }
+
+    // .stage__row
+    &__row {
+        background-color: $blue;
+        border-radius: 25px;
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // .stage__card
+    &__card {
+        padding: 50px;
+        border: 1px solid rgba($color: $white, $alpha: .1);
+        cursor: pointer;
+
+        &:hover {
+            .stage-card__number {
+                color: $white;
+            }
+
+            .stage-card__line {
+                width: 60px;
+            }
+        }
+    }
+}
+
+.stage-card {
+
+    // .stage-card__number
+    &__number {
+        font-size: 3vw;
+        font-weight: 800;
+        color: rgba($color: $white, $alpha: .2);
+        display: flex;
+        align-items: center;
+        transition: $animation_speed;
+    }
+
+    // .stage-card__line
+    &__line {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 5px;
+        background-color: $accent;
+        margin-right: 7px;
+        transition: $animation_speed;
+    }
+
+    // .stage-card__title
+    &__title {
+        font-size: 1.4vw;
+        color: $white;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: .5px;
+        margin: 20px 0px 20px;
+    }
+
+    // .stage-card__text
+    &__text {
+        color: rgba($color: $white, $alpha: .7);
+        font-size: 20px;
+    }
+}

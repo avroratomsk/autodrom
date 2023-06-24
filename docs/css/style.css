@@ -1251,6 +1251,73 @@ body::after {
   transition: 0.3s;
 }
 
+.stage__title {
+  margin: 26px 0px 13px;
+}
+
+.stage__row {
+  background-color: #012D5B;
+  border-radius: 25px;
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.stage__card {
+  padding: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.stage__card:hover .stage-card__number {
+  color: #ffffff;
+}
+
+.stage__card:hover .stage-card__line {
+  width: 60px;
+}
+
+.stage-card__number {
+  font-size: 3vw;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.stage-card__line {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: #C80816;
+  margin-right: 7px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.stage-card__title {
+  font-size: 1.4vw;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  margin: 20px 0px 20px;
+}
+
+.stage-card__text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
+
 /* *******************
 Select
 ******************* */
