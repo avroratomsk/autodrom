@@ -343,3 +343,224 @@
         }
     }
 }
+
+.service {
+    background: rgba($color: $mainColor, $alpha: .01);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 50%;
+        height: 30%;
+        background-color: rgba($color: $blue, $alpha: .03);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 25%;
+        left: 0;
+        width: 30%;
+        height: 30%;
+        background-color: rgba($color: $blue, $alpha: .04);
+        z-index: -1;
+    }
+
+    // .service__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .service__title
+    &__title {
+        margin: 26px 0px 13px;
+    }
+
+    // .service__subtitle
+    &__subtitle {}
+
+    // .service__body
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 30px;
+        margin-top: 60px;
+    }
+
+    // .service__card
+    &__card {
+        border-radius: 3px;
+        background: #FFFFFE;
+        box-shadow: 0px 10px 15px 0px rgba(1, 45, 91, 0.05);
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: $accent;
+            border-radius: 3px 3px 0px 0px;
+            transition: $animation_speed;
+
+            @media screen and (min-width: 769px) {
+                width: 0%;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+
+            &:hover {
+                box-shadow: 0px 0px 5px 0px rgba(1, 45, 91, 0.05);
+
+                &::before {
+                    width: 100%;
+                }
+
+                .card-service__btn {
+                    color: $white;
+
+                    &::before {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // .service__link
+    &__link {
+        color: $accent;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: .2px;
+        position: relative;
+        display: inline-flex !important;
+        margin-top: 50px;
+        padding: 5px 0px;
+        align-self: flex-end;
+
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 0%;
+            height: 3px;
+            background-color: $accent;
+            transition: $animation_speed;
+        }
+
+        &:hover::before {
+            width: 100%;
+            left: 0%;
+        }
+    }
+}
+
+.card-service {
+
+    // .card-service__top
+    &__top {
+        padding: 55px;
+    }
+
+    // .card-service__icon
+    &__icon {
+        display: flex;
+        width: 85px;
+        height: 85px;
+        padding: 26.5px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: $white;
+        box-shadow: 0px 0px 0px 6px rgba(18, 18, 18, 0.02), 0px 10px 10px 0px rgba(1, 45, 91, 0.07);
+        margin-bottom: 35px;
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    // .card-service__title
+    &__title {
+        color: $mainColor;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 31px;
+        letter-spacing: 0.2px;
+        margin-bottom: 22px;
+        display: block;
+        transition: $animation_speed;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    // .card-service__text
+    &__text {
+        color: rgba($color: $mainColor, $alpha: .65);
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.3px;
+        margin-bottom: 30px;
+    }
+
+    // .card-service__price
+    &__price {
+        color: rgba(18, 18, 18, 0.75);
+        font-size: 17px;
+        letter-spacing: 0.2px;
+
+        span {
+            color: $mainColor;
+            font-size: 28px;
+            font-weight: 700;
+        }
+    }
+
+    // .card-service__btn
+    &__btn {
+        position: relative;
+        color: $mainColor;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        text-align: center;
+        padding: 30px 0px;
+        width: 100%;
+        border-top: 1px solid rgba(18, 18, 18, 0.04);
+
+        span {
+            position: relative;
+            z-index: 2;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $accent;
+            z-index: 0;
+            transition: $animation_speed;
+
+            @media screen and (min-width: 769px) {
+                height: 0px;
+            }
+        }
+    }
+}

@@ -6,9 +6,16 @@
 .wrapper {}
 
 ._title {
-    font-size: 25px;
+    color: $mainColor;
+    font-size: 76.8px;
     font-weight: 900;
-    line-height: 140%;
+}
+
+._subtitle {
+    color: rgba($color: $mainColor, $alpha: .75);
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
 }
 
 .intermittent {
@@ -32,5 +39,13 @@
         &:last-child {
             width: 5px;
         }
+    }
+}
+
+._padding-section {
+    padding: 70px 0px;
+
+    @media screen and (max-width: 769px) {
+        padding: 30px 0px;
     }
 }
