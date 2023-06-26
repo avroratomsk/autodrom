@@ -952,7 +952,19 @@
     }
 
     // .cost-work__name
-    &__name {}
+    &__name {
+      @media (hover:hover) {
+      
+      }
+
+      @media (hover:none) {
+      
+      }
+    }
+
+   
+
+    
 
     // .cost-work__price
     &__price {
