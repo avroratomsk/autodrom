@@ -1030,6 +1030,17 @@ body::after {
   z-index: 0;
 }
 
+.utp::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 80%;
+  background-color: #FFFFFE;
+  z-index: -2;
+}
+
 .utp__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1226,6 +1237,7 @@ body::after {
 
 .header-utp__logo img {
   width: 150px;
+  opacity: 0.85;
 }
 
 .header-utp__action {
