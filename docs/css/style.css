@@ -1036,7 +1036,7 @@ body::after {
   top: 0;
   left: 0;
   width: 50%;
-  height: 80%;
+  height: 100%;
   background-color: #FFFFFE;
   z-index: -2;
 }
@@ -1159,6 +1159,7 @@ body::after {
 
 .utp__slide--img {
   margin-right: 40px;
+  max-width: 455px;
 }
 
 .utp__slide--img img {
