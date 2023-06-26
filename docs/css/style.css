@@ -758,6 +758,7 @@ body::after {
 .tab {
   padding: 60px 50px 50px;
   display: none;
+  overflow-y: auto;
 }
 
 .tab._active {
@@ -892,7 +893,7 @@ body::after {
 .form__content {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   gap: 40px 40px;
   margin-bottom: 40px;
 }
@@ -1981,10 +1982,31 @@ body::after {
   font-size: 17px;
   font-weight: 500;
   letter-spacing: 0.2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cost-work__btn:hover {
+  background-color: rgba(200, 8, 22, 0.85);
 }
 
 .action {
   background-color: rgba(1, 45, 91, 0.02);
+}
+
+.action__container {
+  position: relative;
+}
+
+.action__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(1, 45, 91, 0.03);
+  z-index: -1;
 }
 
 .action__row {

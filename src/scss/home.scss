@@ -985,6 +985,11 @@
         font-size: 17px;
         font-weight: 500;
         letter-spacing: 0.2px;
+        transition: $animation_speed;
+
+        &:hover{
+          background-color: rgba($color: $accent, $alpha: .85);
+        }
     }
 }
 
@@ -992,7 +997,20 @@
     background-color: rgba($color: $blue, $alpha: .02);
 
     // .action__container
-    &__container {}
+    &__container {
+      position: relative; 
+
+      &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        background-color: rgba($color: $blue, $alpha: .03);
+        z-index: -1;
+      }
+    }
 
     // .action__body
     &__body {}
