@@ -912,6 +912,7 @@ body::after {
 
 .utp {
   position: relative;
+  margin-top: 120px;
 }
 
 .utp::before {
