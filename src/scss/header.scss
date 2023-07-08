@@ -18,6 +18,10 @@
     transform: skew(-15deg) translateX(-5%);
     background-color: $white;
     z-index: 2;
+
+    @media screen and (max-width: 1690px) {
+      width: 32%;
+    }
   }
 
   &__container {

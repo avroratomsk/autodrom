@@ -3167,6 +3167,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 1690px) {
+  .header::before {
+    width: 32%;
+  }
+}
+
 @media screen and (max-width: 769px) {
   ._padding-section {
     padding: 30px 0px;
