@@ -419,7 +419,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         gap: 30px;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     // .service__card
@@ -446,14 +446,12 @@
         }
 
         @media screen and (min-width: 769px) {
-
             &:hover {
                 box-shadow: 0px 0px 5px 0px rgba(1, 45, 91, 0.05);
 
                 &::before {
                     width: 100%;
                 }
-
                 .card-service__btn {
                     color: $white;
 
@@ -501,14 +499,14 @@
 
     // .card-service__top
     &__top {
-        padding: 55px;
+        padding: 35px;
     }
 
     // .card-service__icon
     &__icon {
         display: flex;
-        width: 85px;
-        height: 85px;
+        width: 65px;
+        height: 65px;
         padding: 26.5px;
         justify-content: center;
         align-items: center;
@@ -541,7 +539,7 @@
 
     // .card-service__text
     &__text {
-        color: rgba($color: $mainColor, $alpha: .65);
+        color: rgba($color: $mainColor, $alpha: 1);
         font-size: 18px;
         line-height: 25px;
         letter-spacing: 0.3px;
@@ -569,7 +567,7 @@
         font-weight: 500;
         letter-spacing: 0.4px;
         text-align: center;
-        padding: 30px 0px;
+        padding: 20px 0px;
         width: 100%;
         border-top: 1px solid rgba(18, 18, 18, 0.04);
 
@@ -618,7 +616,7 @@
 
     // .stage__card
     &__card {
-        padding: 50px;
+        padding: 30px;
         border: 1px solid rgba($color: $white, $alpha: .1);
         cursor: pointer;
 
@@ -727,7 +725,7 @@
 
     // .edge__card
     &__card {
-        padding: 75px 64px;
+        padding: 45px 45px;
         border-radius: 3px;
         background: #FFFFFE;
         box-shadow: 0px 10px 15px 0px rgba(1, 45, 91, 0.05);
@@ -772,8 +770,8 @@
     // .edge__icon
     &__icon {
         display: flex;
-        width: 85px;
-        height: 85px;
+        width: 65px;
+        height: 65px;
         padding: 25.5px 26.5px;
         justify-content: center;
         align-items: center;
@@ -792,7 +790,7 @@
     // .edge__title--card
     &__title--card {
         color: $mainColor;
-        font-size: 26px;
+        font-size: 23px;
         font-weight: 700;
         line-height: 31px;
         letter-spacing: 0.2px;
@@ -809,8 +807,8 @@
 }
 
 .enroll {
-    padding: 100px 0px;
-    margin-top: 100px;
+    padding: 80px 0px;
+    margin-top: 40px;
     position: relative;
     background-attachment: fixed;
     background-size: cover;
@@ -1097,7 +1095,7 @@
     // .card-action__middle
     &__middle {
         position: relative;
-        padding: 40px 30px;
+        padding: 30px 30px;
         flex: 1 1 auto;
     }
 
@@ -1119,7 +1117,7 @@
 
     // .card-action__date
     &__date {
-        color: rgba($color: $mainColor, $alpha: .30);
+        color: rgba($color: $mainColor, $alpha: .7);
         font-size: 13px;
         line-height: 25px;
         letter-spacing: 0.2px;
