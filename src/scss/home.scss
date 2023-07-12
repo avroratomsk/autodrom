@@ -691,7 +691,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-color: rgba($color: $blue, $alpha: .9);
+                background-color: rgba($color: $mainColor, $alpha: .7);
             }
         }
 
@@ -713,7 +713,7 @@
 
     // .edge__subtitle
     &__subtitle {
-        color: rgba($color: $white, $alpha: .7);
+        color: rgba($color: $white, $alpha: 1);
     }
 
     // .edge__body
@@ -821,7 +821,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba($color: $blue, $alpha: .9);
+        background-color: rgba($color: $mainColor, $alpha: .7);
     }
 
     // .enroll__container
@@ -1189,7 +1189,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba($color: $blue, $alpha: .9);
+        background-color: rgba($color: $mainColor, $alpha: .7);
     }
 
     // .coast__container
