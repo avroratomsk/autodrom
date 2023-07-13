@@ -45,9 +45,7 @@
     position: relative;
     z-index: 2;
     &:first-child{
-      
-     
-      
+
     }
   }
 
@@ -75,7 +73,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   &__item {
@@ -85,8 +83,8 @@
     cursor: pointer;
     position: relative;
     
-    &:hover{
-      
+    &:not(:last-child){
+      margin-right: 1.5vw;
     }
 
     &::before{
@@ -125,8 +123,8 @@
     border-right: 5px solid transparent;
     border-top: 5px solid $accent;
     margin-left: 5px;
-    margin-top: -2px;
-    transition: .3s;
+    margin-top: 3px;
+    transition: $animation_speed;
   }
 
   &__link {
