@@ -448,7 +448,9 @@ body::after {
 
 .header {
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 40px;
+  left: 0;
   background-color: #0a498b;
   height: 100px;
   z-index: 99;
@@ -581,6 +583,9 @@ body::after {
   width: 100%;
   padding: 10px 0px;
   height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #172126;
   z-index: 99;
 }
