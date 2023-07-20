@@ -15,21 +15,20 @@
 //@import "fonts/icons";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: 'Roboto', sans-serif;
+$fontFamily: "Roboto", sans-serif;
 $fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
 $mainColor: #172126; // Цвет шрифта по умолчанию
-$bodyColor: #F7F7F9;
+$bodyColor: #f7f7f9;
 // $accent: #CD0000;
-$accent: #C80816;
+$accent: #c80816;
 $white: #ffffff;
 $grey: #727271;
 // $blue: #012D5B;
 $blue: #0a498b;
 
-
-$animation_speed: .3s;
+$animation_speed: 0.3s;
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
@@ -60,33 +59,33 @@ $responsiveType: 1;
 @import "base/null";
 
 body {
+  // Скролл заблокирован
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
 
-	// Скролл заблокирован
-	.lock & {
-		overflow: hidden;
-		touch-action: none;
-	}
-
-	// Сайт загружен
-	.loaded & {}
+  // Сайт загружен
+  .loaded & {
+  }
 }
 
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 
-	// Прижимаем footer
-	>main {
-		flex: 1 1 auto;
-	}
+  // Прижимаем footer
+  > main {
+    flex: 1 1 auto;
+  }
 
-	// Фикс для слайдеров
-	>* {
-		min-width: 0;
-	}
+  // Фикс для слайдеров
+  > * {
+    min-width: 0;
+  }
 }
 
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
@@ -98,54 +97,48 @@ body {
 Снипет (HTML): cnt
 */
 @if ($responsiveType==1) {
+  // Отзывчивая
+  [class*="__container"] {
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
+      margin: 0 auto;
+    }
 
-	// Отзывчивая
-	[class*="__container"] {
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-			margin: 0 auto;
-		}
+    @if ($containerPadding>0) {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+  }
+} @else {
+  // По брейк-поинтам
+  [class*="__container"] {
+    margin: 0 auto;
 
-		@if ($containerPadding>0) {
-			padding: 0 rem(math.div($containerPadding, 2));
-		}
-	}
-}
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
+    } @else {
+      @if ($containerPadding>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
+      }
+    }
 
-@else {
+    @media (max-width: $pc) {
+      max-width: rem(970);
+    }
 
-	// По брейк-поинтам
-	[class*="__container"] {
-		margin: 0 auto;
+    @media (max-width: $tablet) {
+      max-width: rem(750);
+    }
 
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-		}
+    @media (max-width: $mobile) {
+      max-width: none;
 
-		@else {
-			@if ($containerPadding>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-
-		@media (max-width: $pc) {
-			max-width: rem(970);
-		}
-
-		@media (max-width: $tablet) {
-			max-width: rem(750);
-		}
-
-		@media (max-width: $mobile) {
-			max-width: none;
-
-			@if ($containerPadding>0 and $maxWidthContainer>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-	}
+      @if ($containerPadding>0 and $maxWidthContainer>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
+      }
+    }
+  }
 }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
@@ -162,4 +155,4 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "home";
-@import "base/select"
+@import "base/select";

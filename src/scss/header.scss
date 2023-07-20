@@ -1,20 +1,21 @@
 .header {
   width: 100%;
-  position: fixed;
-  top: 40px;
-  left: 0;
+  position: relative;
+  // position: fixed;
+  // top: 40px;
+  // left: 0;
   background-color: $blue;
   height: 100px;
   z-index: 99;
 
-  &::before{
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 27%;
-    height:105px;
-    box-shadow: 2px 2px 5px 0px rgba($color: $mainColor, $alpha: .3);
+    height: 105px;
+    box-shadow: 2px 2px 5px 0px rgba($color: $mainColor, $alpha: 0.3);
     transform: skew(-15deg) translateX(-5%);
     background-color: $white;
     z-index: 2;
@@ -44,8 +45,7 @@
     padding: 20px 0px;
     position: relative;
     z-index: 2;
-    &:first-child{
-
+    &:first-child {
     }
   }
 
@@ -55,8 +55,8 @@
     align-items: center;
     position: relative;
     z-index: 3;
-   
-    img{
+
+    img {
       max-width: 100%;
     }
   }
@@ -82,40 +82,38 @@
     align-items: center;
     cursor: pointer;
     position: relative;
-    
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-right: 1.5vw;
     }
 
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       bottom: 0px;
       right: 0;
       width: 0%;
       height: 1px;
-      background-color: rgba($color: $white, $alpha: .8);
+      background-color: rgba($color: $white, $alpha: 0.8);
       transition: $animation_speed;
     }
 
-    @media (hover:hover) {
-      &:hover{
-      
-        &::before{
+    @media (hover: hover) {
+      &:hover {
+        &::before {
           left: 0%;
           width: 100%;
         }
-        .submenu{
+        .submenu {
           transform: translateY(0%);
           pointer-events: all;
           opacity: 1;
         }
-    }
-      
+      }
     }
   }
 
-  &__arrow{
+  &__arrow {
     content: "";
     width: 0;
     height: 0;
@@ -130,13 +128,13 @@
   &__link {
     color: $white;
     font-weight: 500;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     transition: $animation_speed;
     font-size: 17px;
 
     @media (hover: hover) {
-      &:hover{
-        opacity: .8;
+      &:hover {
+        opacity: 0.8;
       }
     }
   }
@@ -146,9 +144,9 @@
   width: 100%;
   padding: 10px 0px;
   height: 40px;
-  position: fixed;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   background-color: $mainColor;
   // background-color: $accent;
   z-index: 99;
@@ -167,7 +165,7 @@
     display: flex;
     align-items: center;
 
-    &:last-child{
+    &:last-child {
       flex: 1 1 auto;
       justify-content: flex-end;
     }
@@ -179,11 +177,11 @@
     display: flex;
     align-items: center;
 
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-right: 5vw;
     }
 
-    i{
+    i {
       margin-right: 3px;
       font-size: 10px;
     }
@@ -203,8 +201,8 @@
     align-items: center;
     justify-content: center;
 
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -212,11 +210,11 @@
       height: 100%;
     }
 
-    &:not(:last-child){
-      margin-right: .7vw;
+    &:not(:last-child) {
+      margin-right: 0.7vw;
     }
 
-    i{
+    i {
       color: $white;
       font-size: 20px;
     }
@@ -229,7 +227,7 @@
     border-radius: 2px;
     font-size: 12px;
     font-weight: 600;
-    letter-spacing: .3px;
+    letter-spacing: 0.3px;
     color: $white;
   }
 }
@@ -242,7 +240,7 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   min-width: 500px;
   // gap: 0px 25px;
-  box-shadow: 0px 2px 12px 0px rgba($color: #000000, $alpha: .1);
+  box-shadow: 0px 2px 12px 0px rgba($color: #000000, $alpha: 0.1);
   transform: translateY(10%);
   opacity: 0;
   pointer-events: none;
@@ -250,10 +248,10 @@
 
   &__item {
     padding: 20px 20px;
-    border-bottom: 1px dashed rgba($color: #000000, $alpha: .05);
+    border-bottom: 1px dashed rgba($color: #000000, $alpha: 0.05);
 
-    &:hover{
-      background-color: rgba($color: $blue, $alpha: .05);
+    &:hover {
+      background-color: rgba($color: $blue, $alpha: 0.05);
     }
   }
 
@@ -262,5 +260,3 @@
     font-weight: 500;
   }
 }
-
-

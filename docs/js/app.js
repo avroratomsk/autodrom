@@ -3894,6 +3894,25 @@
             },
             on: {}
         });
+        if (document.querySelector(".service__slider")) new core(".service__slider", {
+            modules: [ Navigation, Pagination ],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+            autoHeight: true,
+            speed: 800,
+            loop: false,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            on: {}
+        });
         if (document.querySelector(".swiper-stock")) new core(".swiper-stock", {
             modules: [ Navigation, Pagination, Pagination, Autoplay ],
             direction: "vertical",
