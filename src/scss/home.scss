@@ -248,7 +248,6 @@
 
   // .service__subtitle
   &__subtitle {
-    margin-bottom: 30px;
   }
 
   // .service__slide
@@ -261,6 +260,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
 
     &--caption {
     }
@@ -270,6 +270,7 @@
   &__btns {
     display: flex;
     align-items: center;
+    align-self: flex-end;
   }
 
   .service-prev {
@@ -340,23 +341,23 @@
     }
   }
 
-  .link-more__link {
-    background-color: $accent;
-    padding: 10px 40px;
-    color: $white;
-    font-size: 16px;
-    transition: $animation_speed;
+  // .link-more__link {
+  //   background-color: $accent;
+  //   padding: 10px 40px;
+  //   color: $white;
+  //   font-size: 16px;
+  //   transition: $animation_speed;
 
-    @media (hover: hover) {
-      &:hover {
-        background-color: rgba($color: $accent, $alpha: 0.9);
+  //   @media (hover: hover) {
+  //     &:hover {
+  //       background-color: rgba($color: $accent, $alpha: 0.9);
 
-        &::before {
-          display: none;
-        }
-      }
-    }
-  }
+  //       &::before {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 .card-service {
