@@ -1,0 +1,57 @@
+.header-promo {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: rgba($color: $white, $alpha: 0.8);
+  backdrop-filter: blur(4px);
+  box-shadow: 0px 0px 10px rgba($color: $mainColor, $alpha: 0.1);
+  z-index: 99;
+
+  // .header-promo__container
+
+  &__container {
+  }
+
+  // .header-promo__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .header-promo__logo
+
+  &__logo {
+    width: 130px;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // .header-promo__address
+  &__address {
+    color: $blue;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  // .header-promo__phone
+  &__phone {
+    font-size: 18px;
+    font-weight: 600;
+    color: $blue;
+  }
+
+  // .header-promo__burger
+
+  &__burger {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $mainColor;
+  }
+}

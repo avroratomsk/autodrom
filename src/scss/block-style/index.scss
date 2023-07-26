@@ -1,0 +1,117 @@
+.promo-page {
+  // .promo-page__inner
+
+  &__inner {
+  }
+
+  // .promo-page__row
+
+  &__row {
+    display: flex;
+  }
+
+  // .promo-page__col
+
+  &__col {
+    flex: 1 1 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 60px;
+    overflow: hidden;
+    transition: 1s;
+
+    &:hover {
+      flex: 1 1 75%;
+      .promo-page__img {
+        transform: scale(1.1);
+      }
+    }
+
+    &:first-child {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: $blue, $alpha: 0.6);
+        backdrop-filter: blur(4px);
+        z-index: 1;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: $accent, $alpha: 0.6);
+        backdrop-filter: blur(4px);
+        z-index: 1;
+      }
+    }
+  }
+
+  // .promo-page__img
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+  }
+
+  // .promo-page__title
+
+  &__title {
+    position: relative;
+    z-index: 2;
+    color: rgba($color: $white, $alpha: 0.9);
+    font-weight: 800;
+    font-size: 60px;
+  }
+
+  // .promo-page__subtitle
+
+  &__subtitle {
+    position: relative;
+    z-index: 2;
+    font-size: 15px;
+    line-height: 140%;
+    color: rgba($color: $white, $alpha: 0.8);
+    text-align: center;
+    margin-top: 40px;
+    max-width: 600px;
+  }
+
+  // .promo-page__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    background-color: $white;
+    font-weight: 600;
+    transition: $animation_speed;
+
+    &:hover {
+      width: 290px;
+      background-color: rgba($color: $white, $alpha: 0.8);
+    }
+  }
+}
