@@ -941,6 +941,10 @@ body::after {
           transform: scale(1.1);
 }
 
+.promo-page__col:hover .promo-page__btn {
+  width: 290px;
+}
+
 .promo-page__col:first-child::before {
   content: "";
   position: absolute;
@@ -1009,18 +1013,17 @@ body::after {
       -ms-flex-pack: center;
           justify-content: center;
   height: 50px;
-  width: 250px;
+  width: 220px;
   position: relative;
   z-index: 2;
   margin-top: 50px;
   background-color: #ffffff;
   font-weight: 600;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .promo-page__btn:hover {
-  width: 290px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
