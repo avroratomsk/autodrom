@@ -931,14 +931,9 @@ body::after {
 
 .promo-page__col:hover {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 75%;
-          flex: 1 1 75%;
-}
-
-.promo-page__col:hover .promo-page__img {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+      -ms-flex: 1 1 85%;
+          flex: 1 1 85%;
+  z-index: 3;
 }
 
 .promo-page__col:hover .promo-page__btn {
@@ -952,7 +947,7 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 73, 139, 0.6);
+  background-color: rgba(23, 33, 38, 0.3);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   z-index: 1;
@@ -965,7 +960,7 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(200, 8, 22, 0.6);
+  background-color: rgba(23, 33, 38, 0.3);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   z-index: 1;
@@ -989,6 +984,7 @@ body::after {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 800;
   font-size: 60px;
+  text-transform: uppercase;
 }
 
 .promo-page__subtitle {
