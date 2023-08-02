@@ -3,6 +3,7 @@
 
   &__inner {
     display: flex;
+    background-size: cover;
   }
 
   // .promo-two__col
@@ -17,12 +18,20 @@
 
     &:hover {
       flex: 1 1 80%;
+
+      .promo-two__button {
+        background-color: rgba($color: $white, $alpha: 1);
+      }
     }
   }
 
   // .promo-two__left
   &__left {
     background-color: rgba($color: $accent-black, $alpha: 0.6);
+
+    .title-custom {
+      color: rgba($color: $accent-black, $alpha: 0.8);
+    }
   }
 
   // .promo-two__title
@@ -34,7 +43,14 @@
     text-transform: uppercase;
   }
 
-  // .promo-two__bitton
+  .title-custom {
+    font-size: 50px;
+    background-color: rgba($color: $white, $alpha: 1);
+    padding: 15px 70px;
+    border-radius: 5px;
+  }
+
+  // .promo-two__button
 
   &__button {
     width: 270px;
@@ -48,11 +64,19 @@
     font-weight: 700;
     margin-top: 100px;
     transition: $animation_speed;
+
+    &:hover {
+      background-color: rgba($color: $white, $alpha: 0.9) !important;
+    }
   }
 
   // .promo-two__right
 
   &__right {
     background-color: rgba($color: $blue-black, $alpha: 0.6);
+
+    .title-custom {
+      color: rgba($color: $blue-black, $alpha: 0.8);
+    }
   }
 }

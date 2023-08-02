@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+  <div class="wrapper">
+    <main class="page">
+      @@include('html/_header-promo.htm',{})
+      <div class="promo-two">
+        <div class="promo-two__inner" style="background-image: url(../img/avtoservis.png);">
+          <a href="home.html" class="promo-two__left promo-two__col">
+            <h2 class="promo-two__title title-custom">Автосервис</h2>
+          </a>
+          <a href="#" class="promo-two__right promo-two__col">
+            <h2 class="promo-two__title title-custom">Автомагазин</h2>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

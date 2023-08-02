@@ -1032,6 +1032,7 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-size: cover;
 }
 
 .promo-two .promo-two__col {
@@ -1062,8 +1063,16 @@ body::after {
           flex: 1 1 80%;
 }
 
+.promo-two .promo-two__col:hover .promo-two__button {
+  background-color: white;
+}
+
 .promo-two__left {
   background-color: rgba(62, 3, 7, 0.6);
+}
+
+.promo-two__left .title-custom {
+  color: rgba(62, 3, 7, 0.8);
 }
 
 .promo-two__title {
@@ -1071,6 +1080,13 @@ body::after {
   color: #ffffff;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.promo-two .title-custom {
+  font-size: 50px;
+  background-color: white;
+  padding: 15px 70px;
+  border-radius: 5px;
 }
 
 .promo-two__button {
@@ -1094,8 +1110,16 @@ body::after {
   transition: 0.3s;
 }
 
+.promo-two__button:hover {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
 .promo-two__right {
   background-color: rgba(2, 22, 44, 0.6);
+}
+
+.promo-two__right .title-custom {
+  color: rgba(2, 22, 44, 0.8);
 }
 
 .contact {
