@@ -23,10 +23,12 @@ $mainColor: #172126; // Цвет шрифта по умолчанию
 $bodyColor: #f7f7f9;
 // $accent: #CD0000;
 $accent: #c80816;
+$accent-black: #3e0307;
 $white: #ffffff;
 $grey: #727271;
 // $blue: #012D5B;
 $blue: #0a498b;
+$blue-black: #02162c;
 
 $animation_speed: 0.3s;
 
@@ -154,6 +156,7 @@ body {
 @import "block-style/menu";
 @import "block-style/header-promo";
 @import "block-style/index";
+@import "block-style/index_two";
 @import "block-style/contact";
 
 // Подключение стилей отдельных страниц
