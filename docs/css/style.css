@@ -811,6 +811,9 @@ body::after {
   top: 20%;
 }
 
+.no-webp .utp::before{
+  background-image: url(../img/shap.jpg); }
+
 .utp::before {
   content: "";
   position: absolute;
@@ -818,7 +821,6 @@ body::after {
   left: 0;
   width: 45%;
   height: 100%;
-  background-image: url(../img/shap\(1\).jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2801,3 +2803,5 @@ button.swiper-pagination-bullet {
 }
 
 .webp .contact{ background-image: url(../img/shap.webp); }
+
+.webp .utp::before{ background-image: url(../img/shap.webp); }
