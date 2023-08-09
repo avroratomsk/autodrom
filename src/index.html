@@ -1,34 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"Главная"
-})
+  @@include('html/_head.htm',{ "title":"Главная" })
 
-<body>
-  <div class="wrapper">
-    <main class="page">
-      @@include('html/_header-promo.htm',{})
-
-      <div class="promo-page">
-        <div class="promo-page__inner">
-          <div class="promo-page__row">
-            <div class="promo-page__col">
-              <img src="@img/service.jpg" alt="" class="promo-page__img">
-              <h1 class="promo-page__title">Автосервис</h1>
-              <a href="home.html" type="button" class="promo-page__btn">Перейти</a>
-            </div>
-            <div class="promo-page__col">
-              <img src="@img/shop.jpg" alt="" class="promo-page__img">
-              <h1 class="promo-page__title">Автомагазин</h1>
-              <button type="button" class="promo-page__btn">Перейти</button>
+  <body>
+    <div class="wrapper">
+      <main class="page">
+        <div class="promo">
+          <div class="promo__container">
+            <div class="promo__inner">
+              <p class="promo__text">
+                Выберите направление которое вас интересует
+              </p>
+              <div class="promo__row">
+                <div class="promo__col">
+                  <a href="#" class="promo__link">Автосервис</a>
+                </div>
+                <div class="promo__col">
+                  <div class="promo__logo">
+                    <img src="@img/logo.png" alt="" />
+                  </div>
+                </div>
+                <div class="promo__col">
+                  <a href="#" class="promo__link">Автомагазин</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-    </main>
-  </div>
-  @@include('html/_js.htm',{})
-</body>
-
+      </main>
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
 </html>

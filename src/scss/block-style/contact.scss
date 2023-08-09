@@ -1,14 +1,29 @@
 .contact {
-  padding: 60px 0px;
+  position: relative;
+  background-image: url('../img/shap.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  // background-color: rgba(23, 33, 38, 0.7);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 33, 38, 0.7);
+  }
 
   // .contact__container
 
-  &__container {
-  }
+  &__container {}
 
   // .contact__inner
 
   &__inner {
+    position: relative;
+    z-index: 2;
   }
 
   // .contact__top
@@ -16,238 +31,63 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
-  // .contact__top--caption
+  // .contact__map
 
-  &__top--caption {
+  &__map {
+    flex: 1 1 auto;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 10px;
   }
+
+  // .contact__stock
+
+  &__stock {}
 
   // .contact__title
 
   &__title {
+    color: $white;
   }
 
   // .contact__subtitle
 
   &__subtitle {
+    color: $white;
+    max-width: 400px;
+    margin-bottom: 50px;
   }
 
-  // .contact__switch
+  // .contact__note
 
-  &__switch {
+  &__note {
+    color: $white;
   }
 
-  // .contact__grid
+  // .contact__bottom
 
-  &__grid {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 40px;
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
   }
 
   // .contact__col
 
   &__col {
-  }
-}
-
-.col-contact {
-  // .col-contact__inner
-
-  &__inner {
-  }
-
-  // .col-contact__item
-
-  &__item {
     display: flex;
-
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
-
-  // .col-contact__icon
-
-  &__icon {
-    margin-top: 8px;
-    margin-right: 15px;
-
-    svg {
-      font-size: 20px;
-      fill: rgba($color: $mainColor, $alpha: 0.8);
-    }
-  }
-
-  // .col-contact__text
-
-  &__text {
-    display: flex;
-    flex-direction: column;
-  }
-
-  // .col-contact__link
-
-  &__link {
+    color: $white;
     font-size: 18px;
-    color: rgba($color: $mainColor, $alpha: 0.8);
-    // margin-bottom: 10px;
-    line-height: 150%;
-    transition: $animation_speed;
-
-    span {
-      font-weight: 500;
-    }
-
-    svg {
-      width: 20px;
-    }
-
-    @media (hover: hover) {
-      &:hover {
-        &[href] {
-          color: $accent;
-        }
-      }
-    }
-  }
-
-  // .col-contact__title
-
-  &__title {
-    font-size: 20px;
-    margin: 25px 0px 20px;
-  }
-}
-
-.messanger-contact {
-  .col-contact__link {
-    margin-right: 15px;
-
-    img {
-      width: 25px;
-      fill: $blue;
-    }
-  }
-}
-
-.contact-form {
-  // margin-top: -50px;
-
-  // .contact-form__inner
-
-  &__inner {
-  }
-  // .contact-form__title
-  &__title {
-    font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 20px;
   }
-  // .contact-form__form
 
-  &__form {
-    display: flex;
-    flex-direction: column;
-  }
+  // .contact__icon
 
-  // .contact-form__input
-
-  &__input {
-    input,
-    textarea {
-      width: 100%;
-      border: 1px solid rgba($color: $mainColor, $alpha: 0.1);
-      padding: 10px 10px;
-      outline: none;
-      margin-bottom: 20px;
-
-      &:not(textarea) {
-        height: 60px;
-      }
-
-      &:focus {
-        border-color: rgba($color: $mainColor, $alpha: 0.3);
-      }
-    }
-
-    textarea {
-      height: 150px;
-    }
-  }
-
-  // .contact-form__submit
-
-  &__submit {
-    background-color: $accent;
-    height: 60px;
-    color: $bodyColor;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    border-radius: 5px;
-  }
-}
-
-.switch {
-  display: flex;
-  align-items: center;
-  align-self: flex-end;
-
-  // .switch__text
-  &__text {
-    margin: 0px 10px;
-    color: $mainColor;
-    font-weight: 500;
-    font-size: 18px;
-
-    &.active {
-      color: $accent;
-    }
-  }
-
-  // .switch__checkbox
-  &__checkbox {
-  }
-
-  // .switch__label
-
-  input[type="checkbox"] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-
-    &:checked ~ .switch__label::before {
-      left: calc(100% - 18px) !important;
-    }
-  }
-
-  &__label {
-    position: relative;
-    display: flex;
-    width: 50px;
-    height: 10px;
-    background-color: rgba($color: $mainColor, $alpha: 0.1);
-    border-radius: 10px;
-    cursor: pointer;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      margin-top: -10px;
-      left: -1%;
-      width: 20px;
-      height: 20px;
-      background-color: $blue;
-      border-radius: 50%;
-      transition: $animation_speed;
-    }
+  &__icon {
+    margin-right: 5px;
   }
 }
