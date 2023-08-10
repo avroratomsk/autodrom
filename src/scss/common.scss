@@ -6,6 +6,10 @@
   color: rgba($color: $mainColor, $alpha: .8);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 ._subtitle {
   color: rgba($color: $mainColor, $alpha: 1);
   font-size: 16px;
@@ -118,4 +122,46 @@
   align-items: center;
   justify-content: center;
   border: 1px solid $accent;
+}
+
+.arrow {
+  width: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-weight: normal !important;
+
+  &::after {
+    content: "";
+    width: 98%;
+    height: 1px;
+    background-color: $mainColor;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 4px;
+    border-color: transparent transparent transparent $mainColor;
+  }
+
+  &--left {
+    &::before {
+      left: 0;
+      transform: rotate(180deg) translateY(-50%);
+    }
+  }
 }
