@@ -144,7 +144,7 @@
         left: -5%;
         transform: rotateY(-180deg);
         z-index: -1;
-        // animation: translate 1s infinite;
+        animation: translate-left 3s forwards;
     }
 
     // .index__part
@@ -154,6 +154,7 @@
         right: -19%;
         z-index: -1;
         opacity: .5;
+        animation: translate-right 3s forwards;
     }
 
     // .index__inner
@@ -176,6 +177,8 @@
         color: rgba($color: $mainColor, $alpha: .8);
         margin-top: 40px;
         position: relative;
+        animation: scale 1s forwards 2s;
+        opacity: 0;
 
         &::before,
         &::after {
@@ -222,11 +225,21 @@
         margin-top: 50px;
         width: 200px;
         transform: rotate(-180deg);
+
+        img {
+            animation: translate-right 1s forwards 2s;
+            opacity: 0;
+        }
     }
 
     // .index__first-arrow
     &__first-arrow {
         margin-bottom: 50px;
+
+        img {
+            animation: translate-right 1s forwards 2s;
+            opacity: 0;
+        }
     }
 
     // .index__card
@@ -273,6 +286,17 @@
             z-index: 10;
             transition: $animation_speed;
         }
+
+    }
+
+    .index__card--first {
+        animation: translate-right 3s forwards;
+        opacity: 0;
+    }
+
+    .index__card--last {
+        animation: translate-left 3s forwards;
+        opacity: 0;
     }
 
     .sto {
@@ -300,6 +324,7 @@
     &__logo {
         width: 300px;
         margin: 0px 100px;
+        animation: translate-top 2s forwards;
 
         img {
             max-width: 100%;
@@ -307,14 +332,50 @@
     }
 }
 
-@keyframes translate {
+@keyframes translate-left {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
         opacity: 0;
     }
 
     100% {
         transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes translate-right {
+    0% {
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes translate-top {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
         opacity: 1;
     }
 }
