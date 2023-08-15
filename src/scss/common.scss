@@ -165,3 +165,116 @@ body {
     }
   }
 }
+
+.breadcrumb {
+  margin-top: 20px;
+
+  // .breadcrumb__container
+
+  &__container {}
+
+  // .breadcrumb__inner
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  // .breadcrumb__item
+
+  &__item {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba($color: $mainColor, $alpha: .8);
+  }
+
+  p {
+    color: rgba($color: $blue, $alpha: 1.0);
+  }
+
+  // .breadcrumb--link
+
+  &--link {}
+
+  // .breadcrumb__separator
+
+  &__separator {
+    padding: 0px 8px;
+  }
+}
+
+
+// Блок "У вас что то случилось мы поможем"
+
+.callback-block {
+  padding: 60px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  margin-bottom: 60px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $mainColor, $alpha: .9);
+  }
+
+  // .callback-block__container
+
+  &__container {}
+
+  // .callback-block__inner
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .callback-block__title
+
+  &__title {
+    font-size: 35px;
+    font-weight: 500;
+    color: rgba($color: $white, $alpha: 1.0);
+
+    span {
+      color: $white;
+      font-weight: 800;
+    }
+  }
+
+  // .callback-block__phone
+
+  &__phone {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba($color: $white, $alpha: 1.0);
+    margin-top: 35px;
+  }
+
+  // .callback-block__button
+
+  &__button {
+    background-color: rgba($color: $accent, $alpha: 1.0);
+    width: 230px;
+    height: 45px;
+    border-radius: 50px;
+    color: rgba($color: $white, $alpha: 1.0);
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 40px;
+    transition: $animation_speed;
+
+    &:hover {
+      background-color: rgba($color: $accent, $alpha: .9);
+    }
+  }
+}

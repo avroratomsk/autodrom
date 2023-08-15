@@ -15,8 +15,8 @@
 //@import "fonts/icons";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "Roboto", sans-serif;
-$secondaryFont: 'Montserrat', sans-serif;
+$fontFamily: 'Montserrat', sans-serif;
+$secondaryFont: "Roboto", sans-serif;
 
 $fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
 
@@ -165,6 +165,7 @@ body {
 @import "block-style/header-promo";
 @import "block-style/index";
 @import "block-style/contact";
+@import "block-style/single";
 
 // Подключение стилей отдельных страниц
 @import "home";

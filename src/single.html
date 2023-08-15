@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"Главная" })
+
+<body>
+  <div class="wrapper">
+    <main class="service-page">
+      @@include('html/_header.htm',{})
+      <div class="banner" style="background-image: url(../img/avtoservis.png);">
+        <div class="banner__container">
+          <div class="banner__inner">
+            <h1 class="banner__title _title">Ремонт двигателя</h1>
+            <p class="banner__decr">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem neque, autem
+              earum dolore similique, necessitatibus unde molestias sit reprehenderit fuga illo illum qui nisi soluta?
+            </p>
+            <button type="button" class="banner__button">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrumb">
+        <div class="breadcrumb__container">
+          <div class="breadcrumb__inner">
+            <a href="" class="breadcrumb__item breadcrumb--link">Главная</a>
+            <div class="breadcrumb__separator">/</div>
+            <a href="" class="breadcrumb__item breadcrumb--link">Услуги</a>
+            <div class="breadcrumb__separator">/</div>
+            <p class="breadcrumb__item">Ремонт двигателя</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-body">
+        <div class="service-body__container">
+          <div class="service-body__inner">
+            <div class="service-body__row">
+              <div class="service-body__col">
+                <div class="service-body__image">
+                  <img src="@img/dvigatel.png" alt="">
+                </div>
+              </div>
+              <div class="service-body__col">
+                <p class="service-body__text">
+                  Как известно, двигатель - сердце автомобиля, но даже такое изобретение человечества не вечно, порой,
+                  нуждается в ремонте. Двигатель внутреннего сгорания - очень сложная конструкция, состоящая из
+                  множества деталей и требующая строгого соблюдения регламента технического обслуживания.
+                </p>
+                <p class="service-body__text">
+                  В нашем сервисном центре при проведении работ используется новейшее специализированное оборудование,
+                  приспособления и инструмент, позволяющие качественно выполнить все ремонтные и диагностические работы,
+                  обеспечить надежную эксплуатацию всех отремонтированных узлов и агрегатов. Все работы выполняет
+                  квалифицированный персонал.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-repair">
+        <div class="service-repair__container">
+          <div class="service-repair__inner">
+            <h2 class="service-repair__title">Ориентировочная стоимость ремонта</h2>
+            <div class="service-repair__table table-repair">
+              <div class="table-repair__caption">
+                <div class="table-repair__name">
+                  Вид работы
+                </div>
+                <div class="table-repair__price">
+                  Цена
+                </div>
+              </div>
+              <div class="table-repair__item item-repair">
+                <div class="item-repair__name">Снятие/установка (без снятия подрамника)</div>
+                <div class="item-repair__price">От 5.000 руб.</div>
+              </div>
+              <div class="table-repair__item item-repair">
+                <div class="item-repair__name">Снятие/установка (без снятия подрамника)</div>
+                <div class="item-repair__price">От 5.000 руб.</div>
+              </div>
+              <div class="table-repair__item item-repair">
+                <div class="item-repair__name">Снятие/установка (без снятия подрамника)</div>
+                <div class="item-repair__price">От 5.000 руб.</div>
+              </div>
+              <div class="table-repair__item item-repair">
+                <div class="item-repair__name">Снятие/установка (без снятия подрамника)</div>
+                <div class="item-repair__price">От 5.000 руб.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callback-block" style="background-image: url(../img/shop.jpg);">
+        <div class="callback-block__container">
+          <div class="callback-block__inner">
+            <h2 class="callback-block__title">Что-то сломалось? <span>Мы поможем!</span></h2>
+            <a href="tel:89999999999" class="callback-block__phone">8 (999) 999-99-99</a>
+            <button type="button" class="callback-block__button">Написать</button>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
+</html>
