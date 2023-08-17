@@ -184,7 +184,9 @@
   }
 
   // .service__subtitle
-  &__subtitle {}
+  &__subtitle {
+    max-width: 700px;
+  }
 
   // .service__body
   &__body {
@@ -301,6 +303,13 @@
     }
   }
 
+  // .card-service__btns
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   // .card-service__btn
   &__btn {
     position: relative;
@@ -309,11 +318,22 @@
     font-weight: 500;
     letter-spacing: 0.4px;
     text-align: center;
-    padding: 20px 40px;
+    padding: 15px 30px;
     margin-top: 30px;
     border: 1px solid rgba(18, 18, 18, 0.04);
     transition: $animation_speed;
     background-color: $accent;
+
+    &--trnsp {
+      background-color: $white;
+      border: 1px solid rgba($color: $accent, $alpha: 1.0);
+      color: $accent;
+
+      &:hover {
+        background-color: $accent !important;
+        color: $white !important;
+      }
+    }
 
     &:hover {
       background-color: $white;

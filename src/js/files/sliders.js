@@ -8,6 +8,7 @@
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
 import Swiper from 'swiper';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -33,7 +34,7 @@ function initSliders() {
       // Подключаем модули слайдера
       // для конкретного случая
 
-      // modules: [Navigation, Pagination],
+      modules: [Navigation, Pagination],
       observer: true,
       observeParents: true,
       slidesPerView: 1,
@@ -109,7 +110,7 @@ function initSliders() {
       // Подключаем модули слайдера
       // для конкретного случая
 
-      // modules: [Navigation, Pagination],
+      modules: [Navigation, Pagination],
       observer: true,
       observeParents: true,
       slidesPerView: 3,
@@ -185,7 +186,7 @@ function initSliders() {
       // Подключаем модули слайдера
       // для конкретного случая
 
-      // modules: [Navigation, Pagination],
+      modules: [Navigation, Pagination, Autoplay],
       observer: true,
       observeParents: true,
       slidesPerView: 3,
@@ -199,14 +200,14 @@ function initSliders() {
       //preloadImages: false,
       //lazy: true,
 
-      /*
+
       // Эффекты
       effect: 'fade',
       autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
       },
-      */
+
 
       // Пагинация
       pagination: {
@@ -259,7 +260,7 @@ function initSliders() {
   if (document.querySelector('.swiper-stock')) { // Указываем скласс нужного слайдера
     // Создаем слайдер
     new Swiper('.swiper-stock', { // Указываем скласс нужного слайдера
-      // modules: [Navigation, Pagination, Pagination, Autoplay],
+      modules: [Navigation, Pagination, Pagination, Autoplay],
       direction: 'vertical',
       effect: 'slide',
       slidesPerView: 1,
@@ -274,6 +275,29 @@ function initSliders() {
       },
       pagination: {
         el: '.stock-pagination',
+        clickable: true,
+      },
+    });
+  }
+
+  if (document.querySelector('.service-slider__slider')) { // Указываем скласс нужного слайдера
+    // Создаем слайдер
+    new Swiper('.service-slider__slider', { // Указываем скласс нужного слайдера
+      modules: [Navigation, Pagination, Pagination, Autoplay],
+      direction: 'horizontal',
+      effect: 'slide',
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoHeight: true,
+      speed: 800,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        reverseDirection: true,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: '.service-slider__pagination',
         clickable: true,
       },
     });
