@@ -17,7 +17,62 @@
 
 <body>
 	<div class="wrapper">
-		<main class="single-page">
+		<main class="">
+			<div class="contact-page">
+				<picture><source srcset="img/preimush.webp" type="image/webp"><img src="img/preimush.png" alt="" class="contact-page__img"></picture>
+				<div class="contact-page__row">
+					<div class="contact-page__map">
+						<div class="contact-page__map--content">
+							<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A81401d491cd2dc851092e0c3ffbd1494842ac9cd239e704e5daf2300a2934ab1&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+						</div>
+					</div>
+					<div class="contact-page__form form-contact">
+						<div class="form-contact__content">
+							<h2 class="form-contact__title _title">Оставились вопросы ?</h2>
+							<p class="form-contact__subtitle _subtitle">
+								Оставьте заявку и наши менеджеры с вами свяжутся
+							</p>
+							<form action="" class="form-contact__form">
+								<input type="text" class="form-contact__input" placeholder="Ваше имя">
+								<input type="text" class="form-contact__input" placeholder="Ваш номер телефона">
+								<textarea name="" id="" class="form-contact__textarea" placeholder="Ваш вопрос"></textarea>
+								<button type="submit" class="form-contact__submit">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="contact-page__container">
+					<div class="contact-page__contact contact-content">
+						<div class="contact-content__row">
+							<div class="contact-content__col">
+								<p class="contact-content__title">
+									Контакты
+								</p>
+								<p class="contact-content__label">Телефон</p>
+								<a href="tel:89999999999" class="contact-content__phone contact-content__text">8 (999) 999-99-99</a>
+								<p class="contact-content__label">Почта</p>
+								<a href="mailto:admin@mail.ru" class="contact-content__mail contact-content__text">
+									autodrom@mail.ru
+								</a>
+								<p class="contact-content__label">Социальные сети</p>
+								<div class="contact-content__social">
+									<a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+									<a href=""><i class="fa-brands fa-vk"></i></a>
+								</div>
+							</div>
+							<div class="contact-content__col">
+								<p class="contact-content__title">
+									Местоположение
+								</p>
+								<p class="contact-content__label">Город</p>
+								<p class="contact-content__city contact-content__text">г.Сургут</a>
+								<p class="contact-content__label">Адрес</p>
+								<p class="contact-content__city contact-content__text">ул.Ленина строение 1</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="header">
 				<div class="header__container">
 					<div class="header__inner">
@@ -56,104 +111,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="banner" style="background-image: url(img/avtoservis.png);">
-				<div class="banner__container">
-					<div class="banner__inner">
-						<h1 class="banner__title _title">Ремонт двигателя</h1>
-						<p class="banner__decr">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem neque, autem
-							earum dolore similique, necessitatibus unde molestias sit reprehenderit fuga illo illum qui nisi soluta?
-						</p>
-						<button type="button" class="banner__button">Оставить заявку</button>
-					</div>
-				</div>
-			</div>
-			<div class="breadcrumb">
-				<div class="breadcrumb__container">
-					<div class="breadcrumb__inner">
-						<a href="" class="breadcrumb__item breadcrumb--link">Главная</a>
-						<div class="breadcrumb__separator">/</div>
-						<a href="" class="breadcrumb__item breadcrumb--link">Услуги</a>
-						<div class="breadcrumb__separator">/</div>
-						<p class="breadcrumb__item">Ремонт двигателя</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="service-body">
-				<div class="service-body__container">
-					<div class="service-body__inner">
-						<div class="service-body__row">
-							<div class="service-body__col">
-								<div class="service-body__image">
-									<picture><source srcset="img/dvigatel.webp" type="image/webp"><img src="img/dvigatel.png" alt=""></picture>
-								</div>
-							</div>
-							<div class="service-body__col">
-								<p class="service-body__text">
-									Как известно, двигатель - сердце автомобиля, но даже такое изобретение человечества не вечно, порой,
-									нуждается в ремонте. Двигатель внутреннего сгорания - очень сложная конструкция, состоящая из
-									множества деталей и требующая строгого соблюдения регламента технического обслуживания.
-								</p>
-								<p class="service-body__text">
-									В нашем сервисном центре при проведении работ используется новейшее специализированное оборудование,
-									приспособления и инструмент, позволяющие качественно выполнить все ремонтные и диагностические работы,
-									обеспечить надежную эксплуатацию всех отремонтированных узлов и агрегатов. Все работы выполняет
-									квалифицированный персонал.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="service-repair">
-				<div class="service-repair__container">
-					<div class="service-repair__inner">
-						<h2 class="service-repair__title">Ориентировочная стоимость ремонта</h2>
-						<div class="service-repair__table table-repair">
-							<div class="table-repair__caption">
-								<div class="table-repair__name">
-									Вид работы
-								</div>
-								<div class="table-repair__price">
-									Цена
-								</div>
-							</div>
-							<div class="table-repair__item item-repair">
-								<div class="item-repair__name">Снятие/установка (без снятия подрамника)</div>
-								<div class="item-repair__price">От 5.000 руб.</div>
-							</div>
-							<div class="table-repair__item item-repair">
-								<div class="item-repair__name">Снятие/установка (без снятия подрамника)</div>
-								<div class="item-repair__price">От 5.000 руб.</div>
-							</div>
-							<div class="table-repair__item item-repair">
-								<div class="item-repair__name">Снятие/установка (без снятия подрамника)</div>
-								<div class="item-repair__price">От 5.000 руб.</div>
-							</div>
-							<div class="table-repair__item item-repair">
-								<div class="item-repair__name">Снятие/установка (без снятия подрамника)</div>
-								<div class="item-repair__price">От 5.000 руб.</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="callback-block" style="background-image: url(img/shop.jpg);">
-				<div class="callback-block__container">
-					<div class="callback-block__inner">
-						<h2 class="callback-block__title">Что-то сломалось? <span>Мы поможем!</span></h2>
-						<a href="tel:89999999999" class="callback-block__phone">8 (999) 999-99-99</a>
-						<button type="button" class="callback-block__button">Написать</button>
-					</div>
-				</div>
-			</div>
-
-
-
-
 		</main>
 		<div class="footer">
 			<div class="footer__container">

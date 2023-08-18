@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"Главная" })
+
+<body>
+  <div class="wrapper">
+    <main class="">
+      <div class="contact-page">
+        <img src="@img/preimush.png" alt="" class="contact-page__img">
+        <div class="contact-page__row">
+          <div class="contact-page__map">
+            <div class="contact-page__map--content">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A81401d491cd2dc851092e0c3ffbd1494842ac9cd239e704e5daf2300a2934ab1&amp;source=constructor"
+                width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="contact-page__form form-contact">
+            <div class="form-contact__content">
+              <h2 class="form-contact__title _title">Оставились вопросы ?</h2>
+              <p class="form-contact__subtitle _subtitle">
+                Оставьте заявку и наши менеджеры с вами свяжутся
+              </p>
+              <form action="" class="form-contact__form">
+                <input type="text" class="form-contact__input" placeholder="Ваше имя">
+                <input type="text" class="form-contact__input" placeholder="Ваш номер телефона">
+                <textarea name="" id="" class="form-contact__textarea" placeholder="Ваш вопрос"></textarea>
+                <button type="submit" class="form-contact__submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="contact-page__container">
+          <div class="contact-page__contact contact-content">
+            <div class="contact-content__row">
+              <div class="contact-content__col">
+                <p class="contact-content__title">
+                  Контакты
+                </p>
+                <p class="contact-content__label">Телефон</p>
+                <a href="tel:89999999999" class="contact-content__phone contact-content__text">8 (999) 999-99-99</a>
+                <p class="contact-content__label">Почта</p>
+                <a href="mailto:admin@mail.ru" class="contact-content__mail contact-content__text">
+                  autodrom@mail.ru
+                </a>
+                <p class="contact-content__label">Социальные сети</p>
+                <div class="contact-content__social">
+                  <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                  <a href=""><i class="fa-brands fa-vk"></i></a>
+                </div>
+              </div>
+              <div class="contact-content__col">
+                <p class="contact-content__title">
+                  Местоположение
+                </p>
+                <p class="contact-content__label">Город</p>
+                <p class="contact-content__city contact-content__text">г.Сургут</a>
+                <p class="contact-content__label">Адрес</p>
+                <p class="contact-content__city contact-content__text">ул.Ленина строение 1</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      @@include('html/_header.htm',{})
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
+</html>
