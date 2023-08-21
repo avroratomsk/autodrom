@@ -1,0 +1,29 @@
+.about-page {
+    margin-top: 100px;
+}
+
+.about {
+
+    // .about__container
+
+    &__container {}
+
+    // .about__inner
+
+    &__inner {
+        h1 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 140%;
+            color: rgba($color: $mainColor, $alpha: .8);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
