@@ -1,6 +1,5 @@
 .contact {
   position: relative;
-  background-image: url('../img/shap.jpg');
   background-size: cover;
   background-attachment: fixed;
   // background-color: rgba(23, 33, 38, 0.7);
@@ -89,5 +88,14 @@
 
   &__icon {
     margin-right: 5px;
+  }
+
+  // .contact__time-work
+  &__time-work {
+    p {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
   }
 }

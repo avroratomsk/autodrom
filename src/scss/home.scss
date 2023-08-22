@@ -17,7 +17,6 @@
     left: 0;
     width: 45%;
     height: 100%;
-    background-image: url(../img/shap.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,6 +92,27 @@
 
     &:hover {
       color: $accent;
+    }
+  }
+
+  // .utp__time-work
+  &__time-work {
+    margin-bottom: 30px;
+
+    p {
+      font-size: 15px;
+      color: rgba($color: $mainColor, $alpha: .8);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+
+      i {
+        margin-right: 10px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
     }
   }
 

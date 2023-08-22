@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"Главная" })
+
+<body>
+  <div class="wrapper">
+    <main class="page">
+      @@include('html/_header.htm',{})
+      <div class="shop">
+        <div class="shop__container">
+          <div class="shop__inner">
+            <h1 class="shop__title _title">Закажите подбор деталей в нашем магазине</h1>
+            <div class="shop__form form-shop">
+              <input type="text" placeholder="Ваше имя" class="form-shop__input">
+              <input type="text" placeholder="Ваш телефон" class="form-shop__input">
+              <input type="text" placeholder="VIN" class="form-shop__input">
+              <input type="text" placeholder="Марка автомобиля" class="form-shop__input">
+              <input type="text" placeholder="Модель" class="form-shop__input">
+              <input type="text" placeholder="Модель: IS250" class="form-shop__input">
+              <input type="text" placeholder="Деталь" class="form-shop__input">
+              <input type="text" placeholder="Ориг.номер (OEM)" class="form-shop__input">
+              <textarea name="" id="" class="form-shop__textarea" placeholder="Коментарий"></textarea>
+              <button type="submit" class="form-shop__submit">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

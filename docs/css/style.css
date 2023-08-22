@@ -1555,9 +1555,6 @@ body {
   }
 }
 
-.no-webp .contact{
-  background-image: url("../img/shap.jpg"); }
-
 .contact {
   position: relative;
   background-size: cover;
@@ -1637,6 +1634,10 @@ body {
 
 .contact__icon {
   margin-right: 5px;
+}
+
+.contact__time-work p:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .banner {
@@ -2168,6 +2169,71 @@ body {
   width: 100%;
 }
 
+.shop {
+  margin-top: 100px;
+}
+
+.shop__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.shop__title {
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 120%;
+}
+
+.form-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.form-shop__input {
+  width: 100%;
+  height: 50px;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+  outline: none;
+  border: 1px solid rgba(23, 33, 38, 0);
+}
+
+.form-shop__input:focus {
+  border: 1px solid rgba(23, 33, 38, 0.1);
+}
+
+.form-shop__textarea {
+  height: 150px;
+  padding: 20px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.form-shop__submit {
+  background-color: #c80816;
+  height: 50px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .utp {
   padding-top: 150px;
   position: relative;
@@ -2179,9 +2245,6 @@ body {
   right: 0;
   top: 20%;
 }
-
-.no-webp .utp::before{
-  background-image: url(../img/shap.jpg); }
 
 .utp::before {
   content: "";
@@ -2269,6 +2332,30 @@ body {
 
 .utp__phone:hover {
   color: #c80816;
+}
+
+.utp__time-work {
+  margin-bottom: 30px;
+}
+
+.utp__time-work p {
+  font-size: 15px;
+  color: rgba(23, 33, 38, 0.8);
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.utp__time-work p i {
+  margin-right: 10px;
+}
+
+.utp__time-work p:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .utp__addres {
@@ -4237,7 +4324,3 @@ button.swiper-pagination-bullet {
     font-size: 14px;
   }
 }
-
-.webp .contact{ background-image: url(../img/shap.webp); }
-
-.webp .utp::before{ background-image: url(../img/shap.webp); }
