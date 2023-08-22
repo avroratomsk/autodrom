@@ -87,9 +87,18 @@
 
   &__item {
     transition: $animation_speed;
+    position: relative;
 
     &:not(:last-child) {
       border-right: 1px solid rgba($color: $mainColor, $alpha: .3);
+    }
+
+    &:hover {
+      .sub-menu {
+        transform: translateY(0px);
+        opacity: 1;
+        pointer-events: all;
+      }
     }
   }
 
@@ -104,6 +113,35 @@
 
     &:hover {
       color: $accent;
+    }
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  padding: 20px 0px 0px;
+  width: 300px;
+  background-color: $white;
+  transition: $animation_speed;
+  transform: translateY(100px);
+  opacity: 0;
+  pointer-events: none;
+
+  &__item {}
+
+  // .sub-menu__link
+
+  &__link {
+    display: block;
+    padding: 15px 20px;
+    font-weight: 600;
+    color: rgba($color: $mainColor, $alpha: .8);
+    border-bottom: 1px solid rgba($color: $mainColor, $alpha: .05);
+    transition: $animation_speed;
+
+    &:hover {
+      background-color: rgba($color: $mainColor, $alpha: .02);
     }
   }
 }
