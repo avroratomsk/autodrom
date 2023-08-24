@@ -2080,7 +2080,7 @@ body {
   padding: 0px 20px;
   margin-bottom: 30px;
   border: 1px solid rgba(23, 33, 38, 0.1);
-  background-color: transparent;
+  background-color: #f7f7f9;
   outline: none;
 }
 
@@ -2118,7 +2118,7 @@ body {
   padding: 20px 20px;
   margin-bottom: 30px;
   border: 1px solid rgba(23, 33, 38, 0.1);
-  background-color: transparent;
+  background-color: #f7f7f9;
   outline: none;
 }
 
@@ -4390,6 +4390,26 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .contact-page__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .contact-page__map--content {
+    height: 250px;
+  }
+
+  .contact-content {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1129px) {
   .menu__list {
     -ms-flex-wrap: wrap;
@@ -4498,6 +4518,24 @@ button.swiper-pagination-bullet {
   .contact__map {
     height: 250px;
     margin-right: 0px;
+  }
+
+  .contact-page__img {
+    opacity: 0.5;
+  }
+
+  .form-contact {
+    padding-left: 0px;
+    padding: 0px 15px;
+  }
+
+  .contact-content__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .contact-content__col {
+    margin: 10px;
   }
 
   .utp__car {
@@ -4656,6 +4694,18 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 620px) {
+  .form-contact__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .form-contact__form {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .popup__title {
     font-size: 25px;
@@ -4669,6 +4719,20 @@ button.swiper-pagination-bullet {
 
   .service-slider__slide {
     padding: 30px;
+  }
+
+  .form-contact__input {
+    height: 55px;
+    margin-bottom: 20px;
+  }
+
+  .form-contact__textarea {
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .form-contact__submit {
+    height: 55px;
   }
 
   .edge__row:first-child {
@@ -4870,6 +4934,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 415px) {
+  .form-contact__title {
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 391px) {
   .coast__title {
     font-size: 25px;
@@ -4891,6 +4961,12 @@ button.swiper-pagination-bullet {
 
   .item-garant__title {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contact-content__title {
+    font-size: 25px;
   }
 }
 
