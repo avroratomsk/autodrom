@@ -1736,14 +1736,14 @@ body {
 }
 
 .banner__title {
-  max-width: 490px;
+  max-width: 600px;
   line-height: 110%;
   color: #ffffff;
 }
 
 .banner__decr {
   color: rgba(255, 255, 255, 0.8);
-  max-width: 490px;
+  max-width: 600px;
   line-height: 140%;
   margin-top: 10px;
 }
@@ -4936,7 +4936,7 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 415px) {
   .form-contact__title {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
