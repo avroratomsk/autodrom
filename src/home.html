@@ -64,7 +64,12 @@
                 </div>
                 <a href="#" class="card-service__title">Ремонт тормозных систем</a>
                 <p class="card-service__price">от <span>500</span> руб.</p>
-                <button type="button" class="card-service__btn"><span>Записаться</span></button>
+                <div class="card-service__btns">
+                  <button type="button" class="card-service__btn" data-popup=".popup"><span>Записаться</span></button>
+                  <a href="single.html" type="button"
+                    class="card-service__btn card-service__btn--trnsp"><span>Подробнее</span>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="service__card card-service">
@@ -233,8 +238,8 @@
         </div>
       </div>
 
-      <div class="action">
-        <div class="action__container _padding-section">
+      <div class="action _padding-section">
+        <div class="action__container">
           <div class="action__body">
             <div class="intermittent">
               <span class="intermittent__one"></span>

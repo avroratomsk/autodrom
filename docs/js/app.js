@@ -204,7 +204,7 @@
             if (bodyLockStatus && e.target.closest(".icon-menu")) {
                 bodyLockToggle();
                 document.documentElement.classList.toggle("menu-open");
-                document.querySelector(".menu__body").classList.toggle("active");
+                document.querySelector(".header-mobile").classList.toggle("_show");
             }
         }));
     }

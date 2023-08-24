@@ -30,6 +30,10 @@
   &__top {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 920px) {
+      flex-direction: column;
+    }
   }
 
   // .contact__map
@@ -39,6 +43,11 @@
     margin-right: 20px;
     overflow: hidden;
     border-radius: 10px;
+
+    @media screen and (max-width: 920px) {
+      height: 250px;
+      margin-right: 0px;
+    }
   }
 
   // .contact__stock
@@ -57,6 +66,10 @@
     color: $white;
     max-width: 400px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 425px) {
+      margin-bottom: 25px;
+    }
   }
 
   // .contact__note
@@ -72,6 +85,10 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 50px;
+
+    @media screen and (max-width: 425px) {
+      margin-top: 25px;
+    }
   }
 
   // .contact__col
@@ -82,12 +99,20 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
+
+    span {
+      line-height: 140%;
+    }
   }
 
   // .contact__icon
 
   &__icon {
     margin-right: 5px;
+
+    @media screen and (max-width: 425px) {
+      margin-top: 5px;
+    }
   }
 
   // .contact__time-work

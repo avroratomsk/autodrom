@@ -380,7 +380,7 @@ body::after {
 
 ._title {
   color: #172126;
-  font-size: 2.2vw;
+  font-size: 40px;
   font-weight: 900;
   margin: 26px 0px 13px;
   color: rgba(23, 33, 38, 0.8);
@@ -393,7 +393,7 @@ body {
 ._subtitle {
   color: #172126;
   font-size: 16px;
-  line-height: 25px;
+  line-height: 120%;
   letter-spacing: 0.2px;
 }
 
@@ -876,6 +876,7 @@ body {
 .action-header__link--phone {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
+  white-space: nowrap;
 }
 
 .action-header__btn {
@@ -950,6 +951,66 @@ body {
 
 .sub-menu__link:hover {
   background-color: rgba(23, 33, 38, 0.02);
+}
+
+.header-mobile {
+  position: fixed;
+  top: 70px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-mobile._show {
+  left: 0%;
+}
+
+.header-mobile__inner {
+  padding: 40px 30px;
+}
+
+.header-mobile__logo {
+  display: block;
+  width: 100px;
+}
+
+.header-mobile__logo img {
+  max-width: 100%;
+}
+
+.header-mobile .menu__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-mobile .menu__link {
+  font-size: 25px;
+  padding: 10px 0px;
+}
+
+.header-mobile .action-header {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 40px;
+}
+
+.header-mobile .action-header__link--social {
+  margin-bottom: 20px;
+}
+
+.icon-menu {
+  display: none;
 }
 
 .footer {
@@ -1668,6 +1729,10 @@ body {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 20px;
+}
+
+.contact__col span {
+  line-height: 140%;
 }
 
 .contact__icon {
@@ -3131,10 +3196,6 @@ body {
   border-radius: 3px;
 }
 
-.coast__title {
-  font-size: 40px;
-}
-
 .coast__form {
   margin-top: 30px;
   display: -ms-grid;
@@ -3162,7 +3223,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -3210,30 +3271,29 @@ body {
   margin-bottom: 30px;
 }
 
-.spollers {
+.faq .spollers {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
   gap: 25px;
 }
 
-.spollers__item {
-  background-color: #ffffff;
+.faq .spollers__item {
   border-radius: 5px;
+  background-color: #ffffff;
 }
 
-.spollers__title {
+.faq .spollers__title {
   font-size: 16px;
   padding: 15px 20px;
+  padding: 20px 40px 20px 20px;
 }
 
-.spollers__title::before,
-.spollers__title::after {
+.faq .spollers__title::before,
+.faq .spollers__title::after {
   width: 10px !important;
 }
 
-.spollers__body {
+.faq .spollers__body {
   font-size: 14px;
 }
 
@@ -4283,15 +4343,243 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 1245px) {
+  .header__logo {
+    width: 140px;
+  }
+
+  .utp__image {
+    display: none;
+  }
+
+  .utp__content {
+    -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .action-header__link {
+    margin-right: 10px;
+  }
+
+  .action-header__btn {
+    padding: 15px 0px;
+    width: 200px;
+  }
+
+  .menu__link {
+    padding: 0px 7px;
+  }
+}
+
+@media screen and (max-width: 1129px) {
+  .menu__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .menu__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .edge__body {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+
+  .edge__body {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  ._pc {
+    display: none;
+  }
+
+  .contact__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contact__map {
+    height: 250px;
+    margin-right: 0px;
+  }
+
+  .utp__car {
+    display: none;
+  }
+
+  .utp::before {
+    width: 100%;
+  }
+
+  .utp::after {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  .icon-menu {
+    display: block;
+    position: relative;
+    width: 1.875rem;
+    height: 1.125rem;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .icon-menu span,
+  .icon-menu::before,
+  .icon-menu::after {
+    content: "";
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 0.125rem;
+    background-color: #156963;
+  }
+
+  .icon-menu::before {
+    top: 0;
+  }
+
+  .icon-menu::after {
+    bottom: 0;
+  }
+
+  .icon-menu span {
+    top: calc(50% - 0.0625rem);
+  }
+
+  .menu-open .icon-menu span {
+    width: 0;
+  }
+
+  .menu-open .icon-menu::before {
+    top: calc(50% - 0.0625rem);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+
+  .menu-open .icon-menu::after {
+    bottom: calc(50% - 0.0625rem);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .card-service__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .card-service__btn--trnsp {
+    margin-top: 20px;
+  }
+
+  .card-service__btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .coast__form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 769px) {
   ._padding-section {
     padding: 30px 0px;
+  }
+
+  .card-action__btn {
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ._title {
+    font-size: 30px;
+  }
+
+  ._subtitle {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .service__body {
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .utp__content {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .utp__title {
+    font-size: 25px;
   }
 }
 
 @media screen and (max-width: 540px) {
   .popup__title {
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .edge__row:first-child {
+    padding: 50px 0px 200px;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .edge__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 25px 25px;
+  }
+
+  .edge__icon {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .edge__title--card {
+    text-align: center;
+  }
+
+  .edge__text {
+    text-align: center;
   }
 }
 
@@ -4358,7 +4646,70 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 425px) {
+  .header-mobile .action-header__btn {
+    width: 100%;
+  }
+
+  .contact__subtitle {
+    margin-bottom: 25px;
+  }
+
+  .contact__bottom {
+    margin-top: 25px;
+  }
+
+  .contact__icon {
+    margin-top: 5px;
+  }
+
+  .utp__content {
+    padding: 20px;
+  }
+
+  .edge__title--card {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+
+  .edge__text {
+    font-size: 15px;
+  }
+
+  .action__row {
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  }
+
+  .card-action__middle {
+    padding: 15px 15px;
+  }
+
+  .card-action__title {
+    font-size: 20px;
+  }
+
+  .faq .spollers__title {
+    padding: 10px 40px 10px 20px;
+  }
+
   .dropdown__button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 421px) {
+  .coast__body {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .coast__title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (mx-width: 425px) {
+  .card-action__text {
     font-size: 14px;
   }
 }
