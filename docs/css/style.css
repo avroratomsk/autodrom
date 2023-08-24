@@ -1123,7 +1123,6 @@ body {
   color: #ffffff;
   -webkit-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
-  white-space: nowrap;
 }
 
 .footer-middle__link:hover {

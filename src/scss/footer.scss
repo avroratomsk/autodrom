@@ -118,8 +118,7 @@
 
   // .footer-middle__col
 
-  &__col {
-  }
+  &__col {}
 
   // .footer-middle__col--top
   &__col--top {
@@ -168,8 +167,7 @@
 
   // .footer-middle__list
 
-  &__list {
-  }
+  &__list {}
 
   // .footer-middle__item
 
@@ -186,7 +184,6 @@
     line-height: 132%;
     color: #ffffff;
     transition: color $animation_speed ease 0s;
-    white-space: nowrap;
 
     &:hover {
       color: rgba($color: $white, $alpha: 0.6);
@@ -195,9 +192,11 @@
 }
 
 .footer-bottom {
+
   // .footer-bottom__copyright
   &__copyright {
     color: $white;
   }
 }
+
 //====================================================================================================
