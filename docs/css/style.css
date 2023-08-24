@@ -1493,10 +1493,11 @@ body {
   overflow: hidden !important;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  height: 215px;
 }
 
 .index__img img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
