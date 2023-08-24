@@ -123,9 +123,11 @@ body {
       transition: $animation_speed;
     }
 
-    &:hover::before {
-      left: 0;
-      width: 100%;
+    @media (hover:hover) {
+      &:hover::before {
+        left: 0;
+        width: 100%;
+      }
     }
   }
 }
@@ -291,8 +293,10 @@ body {
     margin-top: 40px;
     transition: $animation_speed;
 
-    &:hover {
-      background-color: rgba($color: $accent, $alpha: .9);
+    @media (hover:hover) {
+      &:hover {
+        background-color: rgba($color: $accent, $alpha: .9);
+      }
     }
   }
 }

@@ -96,9 +96,10 @@
     background-color: $white;
     transition: all $animation_speed ease 0s;
 
-    &:hover {
-      // color: $white;
-      background: rgba($color: $white, $alpha: 0.9);
+    @media (hover:hover) {
+      &:hover {
+        background: rgba($color: $white, $alpha: 0.9);
+      }
     }
 
     @media screen and (max-width: 450px) {
@@ -185,8 +186,10 @@
     color: #ffffff;
     transition: color $animation_speed ease 0s;
 
-    &:hover {
-      color: rgba($color: $white, $alpha: 0.6);
+    @media (hover:hover) {
+      &:hover {
+        color: rgba($color: $white, $alpha: 0.6);
+      }
     }
   }
 }

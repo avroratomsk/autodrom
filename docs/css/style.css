@@ -504,11 +504,6 @@ body {
   transition: 0.3s;
 }
 
-.link-more__link:hover::before {
-  left: 0;
-  width: 100%;
-}
-
 .swiper-button-prev,
 .swiper-button-next {
   display: -webkit-box;
@@ -662,10 +657,6 @@ body {
   margin-top: 40px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.callback-block__button:hover {
-  background-color: rgba(200, 8, 22, 0.9);
 }
 
 .consult {
@@ -1110,10 +1101,6 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.top-footer__button:hover {
-  background: rgba(255, 255, 255, 0.9);
-}
-
 .footer-middle .footer-middle--title {
   font-weight: 600;
   font-size: 18px;
@@ -1146,10 +1133,6 @@ body {
   color: #ffffff;
   -webkit-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
-}
-
-.footer-middle__link:hover {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-bottom__copyright {
@@ -1240,15 +1223,6 @@ body {
   transition: 1s;
 }
 
-.promo-page__col:hover {
-  width: 70%;
-  z-index: 1;
-}
-
-.promo-page__col:hover .promo-page__btn {
-  width: 290px;
-}
-
 .promo-page__col:first-child {
   left: 0;
 }
@@ -1334,10 +1308,6 @@ body {
   font-weight: 600;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-}
-
-.promo-page__btn:hover {
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .index {
@@ -1458,27 +1428,6 @@ body {
   background-color: #ffffff;
   -webkit-transition: 1s;
   transition: 1s;
-}
-
-.index__card:hover {
-  -webkit-box-shadow: 0px 0px 5px rgba(23, 33, 38, 0.1);
-          box-shadow: 0px 0px 5px rgba(23, 33, 38, 0.1);
-}
-
-.index__card:hover .index__img {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.index__card:hover .sto {
-  background-color: #c80816;
-  color: #ffffff;
-}
-
-.index__card:hover .magaz {
-  background-color: #0a498b;
-  color: #ffffff;
 }
 
 .index__card button {
@@ -2182,10 +2131,6 @@ body {
   font-weight: 600;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.form-contact__submit:hover {
-  background-color: rgba(200, 8, 22, 0.9);
 }
 
 .contact-content {
@@ -5072,6 +5017,15 @@ button.swiper-pagination-bullet {
 }
 
 @media (hover: hover) {
+  .link-more__link:hover::before {
+    left: 0;
+    width: 100%;
+  }
+
+  .callback-block__button:hover {
+    background-color: rgba(200, 8, 22, 0.9);
+  }
+
   .menu__item:hover .sub-menu {
     -webkit-transform: translateY(0px);
         -ms-transform: translateY(0px);
@@ -5086,6 +5040,52 @@ button.swiper-pagination-bullet {
 
   .sub-menu__link:hover {
     background-color: rgba(23, 33, 38, 0.02);
+  }
+
+  .top-footer__button:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .footer-middle__link:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .promo-page__col:hover {
+    width: 70%;
+    z-index: 1;
+  }
+
+  .promo-page__col:hover .promo-page__btn {
+    width: 290px;
+  }
+
+  .promo-page__btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .index__card:hover {
+    -webkit-box-shadow: 0px 0px 5px rgba(23, 33, 38, 0.1);
+            box-shadow: 0px 0px 5px rgba(23, 33, 38, 0.1);
+  }
+
+  .index__card:hover .index__img {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+
+  .index__card:hover .sto {
+    background-color: #c80816;
+    color: #ffffff;
+  }
+
+  .index__card:hover .magaz {
+    background-color: #0a498b;
+    color: #ffffff;
+  }
+
+  .form-contact__submit:hover {
+    background-color: rgba(200, 8, 22, 0.9);
   }
 
   .item-blog:hover {

@@ -168,8 +168,10 @@
     font-weight: 600;
     transition: $animation_speed;
 
-    &:hover {
-      background-color: rgba($color: $accent, $alpha: .9);
+    @media (hover:hover) {
+      &:hover {
+        background-color: rgba($color: $accent, $alpha: .9);
+      }
     }
 
     @media screen and (max-width: 520px) {
