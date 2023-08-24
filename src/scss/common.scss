@@ -432,3 +432,13 @@ body {
     font-weight: 600;
   }
 }
+
+._input--hide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  pointer-events: none;
+  visibility: hidden;
+}

@@ -106,16 +106,20 @@
   &__item {
     transition: $animation_speed;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
 
     &:not(:last-child) {
       border-right: 1px solid rgba($color: $mainColor, $alpha: .3);
     }
 
-    &:hover {
-      .sub-menu {
-        transform: translateY(0px);
-        opacity: 1;
-        pointer-events: all;
+    @media (hover:hover) {
+      &:hover {
+        .sub-menu {
+          transform: translateY(0px);
+          opacity: 1;
+          pointer-events: all;
+        }
       }
     }
 
@@ -135,8 +139,10 @@
     padding: 0px 13px;
     transition: $animation_speed;
 
-    &:hover {
-      color: $accent;
+    @media (hover:hover) {
+      &:hover {
+        color: $accent;
+      }
     }
 
     @media screen and (max-width: 1205px) {
@@ -146,15 +152,19 @@
 }
 
 .sub-menu {
-  position: absolute;
-  top: 100%;
-  padding: 20px 0px 0px;
-  width: 300px;
   background-color: $white;
   transition: $animation_speed;
-  transform: translateY(100px);
-  opacity: 0;
-  pointer-events: none;
+
+
+  @media screen and (min-width: 921px) {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    padding: 20px 0px 0px;
+    width: 300px;
+    transform: translateY(100px);
+  }
 
   &__item {}
 
@@ -168,8 +178,10 @@
     border-bottom: 1px solid rgba($color: $mainColor, $alpha: .05);
     transition: $animation_speed;
 
-    &:hover {
-      background-color: rgba($color: $mainColor, $alpha: .02);
+    @media (hover:hover) {
+      &:hover {
+        background-color: rgba($color: $mainColor, $alpha: .02);
+      }
     }
   }
 }
@@ -201,6 +213,8 @@
 
   &__inner {
     padding: 40px 30px;
+    overflow: auto;
+    height: calc(100% - 40px);
   }
 
   // .header-mobile__logo
@@ -228,11 +242,24 @@
 
     // .menu__item
 
-    &__item {}
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      &._show {
+        .sub-menu {
+          overflow: visible;
+          max-height: 1000px;
+        }
+      }
+    }
 
     // .menu__link
 
     &__link {
+      flex: 1 1 auto;
       font-size: 25px;
       padding: 10px 0px;
     }
@@ -243,7 +270,9 @@
 
 
   .sub-menu {
-
+    max-height: 0px;
+    overflow: hidden;
+    transition: 1s;
     // .sub-menu__item
 
     &__item {}

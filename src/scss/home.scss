@@ -118,8 +118,10 @@
     color: rgba($color: $mainColor, $alpha: .8);
     transition: $animation_speed;
 
-    &:hover {
-      color: $accent;
+    @media (hover:hover) {
+      &:hover {
+        color: $accent;
+      }
     }
   }
 
@@ -184,8 +186,10 @@
     font-weight: 600;
     transition: $animation_speed;
 
-    &:hover {
-      background-color: rgba($color: $accent, $alpha: .9);
+    @media (hover:hover) {
+      &:hover {
+        background-color: rgba($color: $accent, $alpha: .9);
+      }
     }
   }
 }
@@ -277,8 +281,10 @@
 
     @media screen and (min-width: 769px) {
 
-      &:hover {
-        box-shadow: 0px 0px 5px 0px rgba(1, 45, 91, 0.05);
+      @media (hover:hover) {
+        &:hover {
+          box-shadow: 0px 0px 5px 0px rgba(1, 45, 91, 0.05);
+        }
       }
     }
   }
@@ -296,9 +302,11 @@
     align-self: flex-start;
     border: 1px solid rgba($color: $accent, $alpha: 1.0);
 
-    &:hover {
-      background-color: $accent;
-      color: $white;
+    @media (hover:hover) {
+      &:hover {
+        background-color: $accent;
+        color: $white;
+      }
     }
   }
 }
@@ -341,8 +349,10 @@
     display: block;
     transition: $animation_speed;
 
-    &:hover {
-      color: $accent;
+    @media (hover:hover) {
+      &:hover {
+        color: $accent;
+      }
     }
   }
 
@@ -389,9 +399,11 @@
       border: 1px solid rgba($color: $accent, $alpha: 1.0);
       color: $accent;
 
-      &:hover {
-        background-color: $accent !important;
-        color: $white !important;
+      @media (hover:hover) {
+        &:hover {
+          background-color: $accent !important;
+          color: $white !important;
+        }
       }
 
       @media screen and (max-width: 870px) {
@@ -399,10 +411,12 @@
       }
     }
 
-    &:hover {
-      background-color: $white;
-      color: $mainColor;
-      border: 1px solid rgba(18, 18, 18, 0.4);
+    @media (hover:hover) {
+      &:hover {
+        background-color: $white;
+        color: $mainColor;
+        border: 1px solid rgba(18, 18, 18, 0.4);
+      }
     }
 
     span {
@@ -505,17 +519,19 @@
       }
     }
 
-    &:hover {
-      box-shadow: 0px 0px 5px 0px rgba(1, 45, 91, 0.05);
+    @media (hover:hover) {
+      &:hover {
+        box-shadow: 0px 0px 5px 0px rgba(1, 45, 91, 0.05);
 
-      &::before {
-        height: 100%;
-      }
+        &::before {
+          height: 100%;
+        }
 
-      .edge__icon {
-        box-shadow:
-          0px 0px 0px 2px rgba(18, 18, 18, 0.02),
-          0px 0px 5px 0px rgba(1, 45, 91, 0.07);
+        .edge__icon {
+          box-shadow:
+            0px 0px 0px 2px rgba(18, 18, 18, 0.02),
+            0px 0px 5px 0px rgba(1, 45, 91, 0.07);
+        }
       }
     }
 
@@ -654,8 +670,10 @@
     letter-spacing: 0.2px;
     transition: $animation_speed;
 
-    &:hover {
-      background: rgba($color: $accent, $alpha: 0.9);
+    @media (hover:hover) {
+      &:hover {
+        background: rgba($color: $accent, $alpha: 0.9);
+      }
     }
   }
 }
@@ -721,11 +739,13 @@
       right: 30px;
     }
 
-    &:hover {
-      background-color: rgba($color: $blue, $alpha: 0.96);
+    @media (hover:hover) {
+      &:hover {
+        background-color: rgba($color: $blue, $alpha: 0.96);
 
-      svg {
-        margin-left: 5px;
+        svg {
+          margin-left: 5px;
+        }
       }
     }
 
@@ -749,11 +769,7 @@
   }
 
   // .cost-work__name
-  &__name {
-    @media (hover: hover) {}
-
-    @media (hover: none) {}
-  }
+  &__name {}
 
   // .cost-work__price
   &__price {
@@ -788,9 +804,12 @@
     letter-spacing: 0.2px;
     transition: $animation_speed;
 
-    &:hover {
-      background-color: rgba($color: $accent, $alpha: 0.85);
+    @media (hover:hover) {
+      &:hover {
+        background-color: rgba($color: $accent, $alpha: 0.85);
+      }
     }
+
   }
 }
 
@@ -844,18 +863,20 @@
   display: flex;
   flex-direction: column;
 
-  &:hover {
-    .card-action__img {
-      img {
-        transform: scale(1.01);
+  @media (hover:hover) {
+    &:hover {
+      .card-action__img {
+        img {
+          transform: scale(1.01);
+        }
       }
-    }
 
-    .card-action__btn {
-      color: $white;
+      .card-action__btn {
+        color: $white;
 
-      &::before {
-        height: 100%;
+        &::before {
+          height: 100%;
+        }
       }
     }
   }
@@ -895,9 +916,12 @@
     display: block;
     transition: $animation_speed;
 
-    &:hover {
-      color: $accent;
+    @media (hover:hover) {
+      &:hover {
+        color: $accent;
+      }
     }
+
 
     @media screen and (max-width: 425px) {
       font-size: 20px;
@@ -1042,8 +1066,10 @@
     border-radius: 3px;
     transition: $animation_speed;
 
-    &:hover {
-      background-color: rgba($color: $accent, $alpha: 0.9);
+    @media (hover:hover) {
+      &:hover {
+        background-color: rgba($color: $accent, $alpha: 0.9);
+      }
     }
   }
 
