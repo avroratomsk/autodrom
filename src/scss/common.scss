@@ -263,6 +263,11 @@ body {
       color: $white;
       font-weight: 800;
     }
+
+    @media screen and (max-width: 425px) {
+      text-align: center;
+      // font-size: 30px;
+    }
   }
 
   // .callback-block__phone
@@ -324,6 +329,7 @@ body {
     bottom: 0;
     left: -150px;
     width: 400px;
+    z-index: -1;
   }
 
   // .consult__container
@@ -381,6 +387,10 @@ body {
       font-weight: 600;
       color: rgba($color: $mainColor, $alpha: .4);
     }
+
+    @media screen and (max-width: 425px) {
+      margin-bottom: 15px;
+    }
   }
 
   // .consult-form__textarea
@@ -403,6 +413,10 @@ body {
     &::placeholder {
       font-weight: 600;
       color: rgba($color: $mainColor, $alpha: .4);
+    }
+
+    @media screen and (max-width: 425px) {
+      margin-bottom: 15px;
     }
   }
 

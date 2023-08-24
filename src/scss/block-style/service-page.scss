@@ -36,6 +36,14 @@
             background-color: rgba(23, 33, 38, 0.7);
             z-index: 2;
         }
+
+        @media screen and (max-width: 520px) {
+            padding: 30px;
+        }
+
+        @media screen and (max-width: 425px) {
+            padding: 0px;
+        }
     }
 
     // .service-slider__container
@@ -50,11 +58,19 @@
 
     &__title {
         max-width: 750px;
-        font-size: 2vw;
+        font-size: 40px;
         line-height: 120%;
         color: $white;
         font-weight: 700;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 690px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 425px) {
+            font-size: 22px;
+        }
     }
 
     // .service-slider__btn
@@ -101,6 +117,14 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         gap: 50px 50px;
+
+        @media screen and (max-width: 425px) {
+            gap: 20px 20px;
+        }
+
+        @media screen and (max-width: 375px) {
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        }
     }
 
     // .service-garant__item
@@ -112,6 +136,10 @@
     border: 1px solid rgba($color: $mainColor, $alpha: .02);
     box-shadow: 0px 0px 5px rgba($color: $mainColor, $alpha: .05);
     padding: 40px;
+
+    @media screen and (max-width: 375px) {
+        padding: 30px 15px;
+    }
 
     // .item-garant__top
 
@@ -137,6 +165,10 @@
     &__title {
         font-size: 20px;
         font-weight: 600;
+
+        @media screen and (max-width: 375px) {
+            font-size: 18px;
+        }
     }
 
     // .item-garant__text

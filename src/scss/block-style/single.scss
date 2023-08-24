@@ -71,6 +71,10 @@
     &__row {
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 875px) {
+            flex-direction: column;
+        }
     }
 
     // .service-body__col
@@ -136,6 +140,14 @@
         display: grid;
         grid-template-columns: 1fr 15%;
         background-color: rgba($color: $blue, $alpha: 1.0);
+
+        @media screen and (max-width: 805px) {
+            grid-template-columns: 1fr 150px;
+        }
+
+        @media screen and (max-width: 425px) {
+            grid-template-columns: 1fr 110px;
+        }
     }
 
     // .table-repair__name
@@ -175,6 +187,14 @@
         background-color: rgba($color: $blue, $alpha: .12);
     }
 
+    @media screen and (max-width: 805px) {
+        grid-template-columns: 1fr 150px;
+    }
+
+    @media screen and (max-width: 425px) {
+        grid-template-columns: 1fr 110px;
+    }
+
     // .item-repair__name
 
     &__name {
@@ -184,6 +204,7 @@
         color: rgba($color: $mainColor, $alpha: 1.0);
         font-weight: 500;
         font-size: 14px;
+        line-height: 120%;
         border-right: 1px solid rgba($color: $mainColor, $alpha: .4);
         border-left: 1px solid rgba($color: $mainColor, $alpha: .4);
         border-bottom: 1px solid rgba($color: $mainColor, $alpha: .4);
@@ -201,5 +222,9 @@
         font-size: 14px;
         border-right: 1px solid rgba($color: $mainColor, $alpha: .4);
         border-bottom: 1px solid rgba($color: $mainColor, $alpha: .4);
+
+        @media screen and (max-width: 425px) {
+            padding: 15px 5px;
+        }
     }
 }

@@ -699,6 +699,7 @@ body {
   bottom: 0;
   left: -150px;
   width: 400px;
+  z-index: -1;
 }
 
 .consult__inner {
@@ -1893,6 +1894,7 @@ body {
   color: #172126;
   font-weight: 500;
   font-size: 14px;
+  line-height: 120%;
   border-right: 1px solid rgba(23, 33, 38, 0.4);
   border-left: 1px solid rgba(23, 33, 38, 0.4);
   border-bottom: 1px solid rgba(23, 33, 38, 0.4);
@@ -1969,7 +1971,7 @@ body {
 
 .service-slider__title {
   max-width: 750px;
-  font-size: 2vw;
+  font-size: 40px;
   line-height: 120%;
   color: #ffffff;
   font-weight: 700;
@@ -4486,6 +4488,15 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 875px) {
+  .service-body__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 870px) {
   .card-service__btns {
     -webkit-box-orient: vertical;
@@ -4507,6 +4518,18 @@ button.swiper-pagination-bullet {
   .coast__form {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .table-repair__caption {
+    -ms-grid-columns: 1fr 150px;
+    grid-template-columns: 1fr 150px;
+  }
+
+  .item-repair {
+    -ms-grid-columns: 1fr 150px;
+    grid-template-columns: 1fr 150px;
   }
 }
 
@@ -4536,6 +4559,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 690px) {
+  .service-slider__title {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 635px) {
   .utp__content {
     min-width: 100%;
@@ -4555,6 +4584,10 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 520px) {
+  .service-slider__slide {
+    padding: 30px;
+  }
+
   .edge__row:first-child {
     padding: 50px 0px 200px;
   }
@@ -4646,6 +4679,18 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 425px) {
+  .callback-block__title {
+    text-align: center;
+  }
+
+  .consult-form__input {
+    margin-bottom: 15px;
+  }
+
+  .consult-form__textarea {
+    margin-bottom: 15px;
+  }
+
   .header-mobile .action-header__btn {
     width: 100%;
   }
@@ -4660,6 +4705,32 @@ button.swiper-pagination-bullet {
 
   .contact__icon {
     margin-top: 5px;
+  }
+
+  .table-repair__caption {
+    -ms-grid-columns: 1fr 110px;
+    grid-template-columns: 1fr 110px;
+  }
+
+  .item-repair {
+    -ms-grid-columns: 1fr 110px;
+    grid-template-columns: 1fr 110px;
+  }
+
+  .item-repair__price {
+    padding: 15px 5px;
+  }
+
+  .service-slider__slide {
+    padding: 0px;
+  }
+
+  .service-slider__title {
+    font-size: 22px;
+  }
+
+  .service-garant__grid {
+    gap: 20px 20px;
   }
 
   .utp__content {
@@ -4705,6 +4776,20 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 391px) {
   .coast__title {
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .service-garant__grid {
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  }
+
+  .item-garant {
+    padding: 30px 15px;
+  }
+
+  .item-garant__title {
+    font-size: 18px;
   }
 }
 
