@@ -7,6 +7,10 @@
 
     &__row {
         display: flex;
+
+        @media screen and (max-width: 921px) {
+            flex-direction: column;
+        }
     }
 
     // .promo-page__col
@@ -68,6 +72,12 @@
                 z-index: 1;
             }
         }
+
+        @media screen and (max-width: 1125px) {
+            width: 100%;
+            height: 100%;
+        }
+
     }
 
     // .promo-page__img
@@ -131,7 +141,6 @@
 
 .index {
     overflow: hidden !important;
-    height: 100vh;
 
     // .index__container
 
@@ -144,7 +153,18 @@
         left: -5%;
         transform: rotateY(-180deg);
         z-index: -1;
-        animation: translate-left 3s forwards;
+
+        @media screen and (min-width: 921px) {
+            animation: translate-left 3s forwards;
+        }
+
+        @media screen and (max-width: 921px) {
+            max-width: 400px;
+        }
+
+        @media screen and (max-width: 426px) {
+            display: none;
+        }
     }
 
     // .index__part
@@ -154,7 +174,18 @@
         right: -19%;
         z-index: -1;
         opacity: .5;
-        animation: translate-right 3s forwards;
+
+        @media screen and (min-width: 921px) {
+            animation: translate-right 3s forwards;
+        }
+
+        @media screen and (max-width: 921px) {
+            max-width: 400px;
+        }
+
+        @media screen and (max-width: 426px) {
+            display: none;
+        }
     }
 
     // .index__inner
@@ -166,6 +197,11 @@
         justify-content: center;
         width: 100%;
         height: 100vh;
+
+        @media screen and (max-width: 921px) {
+            height: 100%;
+            padding: 50px 0px;
+        }
     }
 
     // .index__title
@@ -177,8 +213,11 @@
         color: rgba($color: $mainColor, $alpha: .8);
         margin-top: 40px;
         position: relative;
-        animation: scale 1s forwards 2s;
-        opacity: 0;
+
+        @media screen and (min-width: 921px) {
+            animation: scale 1s forwards 2s;
+            opacity: 0;
+        }
 
         &::before,
         &::after {
@@ -197,6 +236,14 @@
         &::after {
             bottom: -10px;
         }
+
+        @media screen and (max-width: 450px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 375px) {
+            font-size: 17px;
+        }
     }
 
     // .index__line
@@ -210,6 +257,12 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 70px;
+
+        @media screen and (max-width: 921px) {
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 35px;
+        }
     }
 
     // .index__col
@@ -218,6 +271,10 @@
         display: flex;
         flex-direction: column;
         margin: 0px 20px;
+
+        @media screen and (max-width: 921px) {
+            flex-direction: row;
+        }
     }
 
     // .index__last-arrow
@@ -227,8 +284,15 @@
         transform: rotate(-180deg);
 
         img {
-            animation: translate-right 1s forwards 2s;
-            opacity: 0;
+            @media screen and (min-width: 921px) {
+                animation: translate-right 1s forwards 2s;
+                opacity: 0;
+            }
+        }
+
+        @media screen and (max-width: 921px) {
+            transform: rotate(-90deg);
+            width: 100%;
         }
     }
 
@@ -237,8 +301,15 @@
         margin-bottom: 50px;
 
         img {
-            animation: translate-right 1s forwards 2s;
-            opacity: 0;
+            @media screen and (min-width: 921px) {
+                animation: translate-right 1s forwards 2s;
+                opacity: 0;
+            }
+        }
+
+        @media screen and (max-width: 921px) {
+            transform: rotate(90deg);
+            width: 100%;
         }
     }
 
@@ -287,16 +358,23 @@
             transition: $animation_speed;
         }
 
+        @media screen and (max-width: 520px) {
+            width: 100%;
+        }
     }
 
     .index__card--first {
-        animation: translate-right 3s forwards;
-        opacity: 0;
+        @media screen and (min-width: 921px) {
+            animation: translate-right 3s forwards;
+            opacity: 0;
+        }
     }
 
     .index__card--last {
-        animation: translate-left 3s forwards;
-        opacity: 0;
+        @media screen and (min-width: 921px) {
+            animation: translate-left 3s forwards;
+            opacity: 0;
+        }
     }
 
     .sto {
@@ -324,10 +402,17 @@
     &__logo {
         width: 300px;
         margin: 0px 100px;
-        animation: translate-top 2s forwards;
+
+        @media screen and (min-width: 921px) {
+            animation: translate-top 2s forwards;
+        }
 
         img {
             max-width: 100%;
+        }
+
+        @media screen and (max-width: 921px) {
+            width: 180px;
         }
     }
 }
