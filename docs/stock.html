@@ -22,57 +22,13 @@
 
 <body>
 	<div class="wrapper">
-		<main class="page">
-			<div class="header">
-				<div class="header__container">
-					<div class="header__inner">
-						<div class="header__logo">
-							<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" /></picture>
-						</div>
-						<nav class="header__menu menu _pc">
-							<ul class="menu__list">
-								<li class="menu__item">
-									<a href="#" class="menu__link">Главная</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__link">О компании</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__link">Услуги</a>
-									<ul class="sub-menu">
-										<li class="sub-menu__item"><a href="#" class="sub-menu__link">Услуга 1</a></li>
-										<li class="sub-menu__item"><a href="#" class="sub-menu__link">Ремонт тормазной системы</a></li>
-										<li class="sub-menu__item"><a href="#" class="sub-menu__link">Услуга 1</a></li>
-										<li class="sub-menu__item"><a href="#" class="sub-menu__link">Услуга 1</a></li>
-										<li class="sub-menu__item"><a href="#" class="sub-menu__link">Услуга 1</a></li>
-									</ul>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__link">Акции</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__link">Контакты</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__link">Интернет-Магазин</a>
-								</li>
-							</ul>
-						</nav>
-						<div class="header__action action-header">
-							<a href="#" class="action-header__link action-header__link--phone">8 (999) 999-99-99</a>
-							<a href="#" class="action-header__link action-header__link--social _pc">
-								<i class="fa-brands fa-vk"></i>
-							</a>
-							<button class="action-header__btn _pc">Обратный звонок</button>
-						</div>
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
+		<div class="header">
+			<div class="header__container">
+				<div class="header__inner">
+					<div class="header__logo">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" /></picture>
 					</div>
-				</div>
-			</div>
-
-			<div class="header-mobile _mb">
-				<div class="header-mobile__inner">
-					<nav class="header__menu menu--mobile">
+					<nav class="header__menu menu _pc">
 						<ul class="menu__list">
 							<li class="menu__item">
 								<a href="#" class="menu__link">Главная</a>
@@ -102,32 +58,58 @@
 						</ul>
 					</nav>
 					<div class="header__action action-header">
-						<a href="#" class="action-header__link action-header__link--social">
+						<a href="#" class="action-header__link action-header__link--phone">8 (999) 999-99-99</a>
+						<a href="#" class="action-header__link action-header__link--social _pc">
 							<i class="fa-brands fa-vk"></i>
 						</a>
-						<button class="action-header__btn">Обратный звонок</button>
+						<button class="action-header__btn _pc">Обратный звонок</button>
 					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
-			<div class="shop">
-				<div class="shop__container">
-					<div class="shop__inner">
-						<h1 class="shop__title _title">Закажите подбор деталей в нашем магазине</h1>
-						<div class="shop__form form-shop">
-							<input type="text" placeholder="Ваше имя" class="form-shop__input">
-							<input type="text" placeholder="Ваш телефон" class="form-shop__input">
-							<input type="text" placeholder="VIN" class="form-shop__input">
-							<input type="text" placeholder="Марка автомобиля" class="form-shop__input">
-							<input type="text" placeholder="Модель" class="form-shop__input">
-							<input type="text" placeholder="Модель: IS250" class="form-shop__input">
-							<input type="text" placeholder="Деталь" class="form-shop__input">
-							<input type="text" placeholder="Ориг.номер (OEM)" class="form-shop__input">
-							<textarea name="" id="" class="form-shop__textarea" placeholder="Коментарий"></textarea>
-							<button type="submit" class="form-shop__submit">Заказать</button>
-						</div>
-					</div>
+		</div>
+
+		<div class="header-mobile _mb">
+			<div class="header-mobile__inner">
+				<nav class="header__menu menu--mobile">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#" class="menu__link">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">О компании</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Услуги</a>
+							<ul class="sub-menu">
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Услуга 1</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Ремонт тормазной системы</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Услуга 1</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Услуга 1</a></li>
+								<li class="sub-menu__item"><a href="#" class="sub-menu__link">Услуга 1</a></li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Акции</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Контакты</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Интернет-Магазин</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__action action-header">
+					<a href="#" class="action-header__link action-header__link--social">
+						<i class="fa-brands fa-vk"></i>
+					</a>
+					<button class="action-header__btn">Обратный звонок</button>
 				</div>
 			</div>
+		</div>
+		<main class="stock-page">
+			<p class="stock__text _title">Страница находиться в разработке</p>
 		</main>
 		<div class="footer">
 			<div class="footer__container">

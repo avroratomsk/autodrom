@@ -3266,6 +3266,20 @@ body {
   font-size: 14px;
 }
 
+.stock-page {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 15px;
+}
+
 /* *******************
 Select
 ******************* */
@@ -4359,6 +4373,19 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (max-width: 1280px) {
+  .card-service__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .card-service__btn {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1245px) {
   .header__logo {
     width: 140px;
@@ -4615,19 +4642,8 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 870px) {
-  .card-service__btns {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .card-service__btn--trnsp {
     margin-top: 20px;
-  }
-
-  .card-service__btn {
-    width: 100%;
   }
 }
 
@@ -4760,6 +4776,12 @@ button.swiper-pagination-bullet {
 
   .edge__text {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shop__title {
+    font-size: 25px;
   }
 }
 
