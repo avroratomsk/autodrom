@@ -51,7 +51,6 @@ import { flsModules } from "./modules.js";
 // } 
 
 let menuItem = document.querySelectorAll('.menu__item-sub');
-console.log(menuItem);
 
 if (menuItem) {
   menuItem.forEach(item => {
@@ -73,7 +72,7 @@ if (buttonsEnroll) {
       if (inputHideEnrollPopup) {
         inputHideEnrollPopup.value = dataName;
       } else {
-        console.log('Пусто');
+        alert('Нету такого инпута')
       }
 
     })

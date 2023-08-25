@@ -1595,91 +1595,78 @@ body {
 
 .contact {
   position: relative;
-  background-size: cover;
-  background-attachment: fixed;
+  padding: 0px 0px;
 }
 
-.contact::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.contact iframe {
+  height: 250px;
+}
+
+.contact__info {
+  background-color: #ffffff;
   height: 100%;
-  background-color: rgba(23, 33, 38, 0.7);
-}
-
-.contact__inner {
-  position: relative;
-  z-index: 2;
-}
-
-.contact__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.contact__map {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  margin-right: 20px;
-  overflow: hidden;
-  border-radius: 10px;
+  max-width: 500px;
+  padding: 40px;
 }
 
 .contact__title {
-  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(23, 33, 38, 0.8);
+  margin-bottom: 40px;
 }
 
-.contact__subtitle {
-  color: #ffffff;
-  max-width: 400px;
-  margin-bottom: 50px;
-}
-
-.contact__note {
-  color: #ffffff;
-}
-
-.contact__bottom {
+.contact__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 50px;
 }
 
-.contact__col {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #ffffff;
+.contact__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.contact__item span,
+.contact__item a {
   font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.contact__col span {
-  line-height: 140%;
+  font-weight: 500;
 }
 
 .contact__icon {
-  margin-right: 5px;
+  margin-right: 10px;
+}
+
+.contact__icon i {
+  color: #c80816;
+  font-size: 17px;
+}
+
+.contact__time-work {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .contact__time-work p:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.contact__shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #c80816;
+  width: 100%;
+  height: 60px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 50px;
 }
 
 .banner {
@@ -2982,6 +2969,7 @@ body {
 
 .action {
   background-color: rgba(10, 73, 139, 0.02);
+  padding-bottom: 60px;
 }
 
 .action__container {
@@ -4241,6 +4229,22 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
+@media screen and (min-width: 426px) {
+  .contact iframe {
+    height: 460px;
+  }
+
+  .contact__inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
 @media screen and (min-width: 450px) {
   .top-footer__title {
     margin-right: 20px;
@@ -4502,18 +4506,6 @@ button.swiper-pagination-bullet {
 @media screen and (max-width: 920px) {
   ._pc {
     display: none;
-  }
-
-  .contact__top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .contact__map {
-    height: 250px;
-    margin-right: 0px;
   }
 
   .contact-page__img {
@@ -4835,6 +4827,15 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
+  .contact__info {
+    margin-bottom: 30px;
+    padding: 40px 20px;
+  }
+
+  .contact__title {
+    font-size: 23px;
+  }
+
   .page-blog .banner__title {
     margin-top: 35px;
   }
@@ -4900,18 +4901,6 @@ button.swiper-pagination-bullet {
 
   .header-mobile .action-header__btn {
     width: 100%;
-  }
-
-  .contact__subtitle {
-    margin-bottom: 25px;
-  }
-
-  .contact__bottom {
-    margin-top: 25px;
-  }
-
-  .contact__icon {
-    margin-top: 5px;
   }
 
   .table-repair__caption {

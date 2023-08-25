@@ -4078,7 +4078,6 @@
         }
     }), 0);
     let menuItem = document.querySelectorAll(".menu__item-sub");
-    console.log(menuItem);
     if (menuItem) menuItem.forEach((item => {
         item.addEventListener("click", (function(e) {
             this.classList.toggle("_show");
@@ -4089,7 +4088,7 @@
         item.addEventListener("click", (function(e) {
             let dataName = this.dataset.name;
             let inputHideEnrollPopup = document.querySelector(".input__name");
-            if (inputHideEnrollPopup) inputHideEnrollPopup.value = dataName; else console.log("Пусто");
+            if (inputHideEnrollPopup) inputHideEnrollPopup.value = dataName; else alert("Нету такого инпута");
         }));
     }));
     window["FLS"] = true;
