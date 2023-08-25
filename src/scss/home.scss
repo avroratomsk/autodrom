@@ -1,3 +1,15 @@
+.home-page {
+  .blog__grid {
+    margin-top: 50px;
+  }
+
+  .item-blog {
+    position: relative;
+    z-index: 2;
+    background-color: $white;
+  }
+}
+
 .utp {
   padding-top: 150px;
   position: relative;

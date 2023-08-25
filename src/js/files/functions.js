@@ -418,7 +418,7 @@ export function menuInit() {
 			if (bodyLockStatus && e.target.closest('.icon-menu')) {
 				bodyLockToggle();
 				document.documentElement.classList.toggle("menu-open");
-				document.querySelector('.header-mobile').classList.toggle("_show");
+				document.querySelector('.modile-menu').classList.toggle("_show");
 			}
 		});
 	};

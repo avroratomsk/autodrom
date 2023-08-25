@@ -1,0 +1,77 @@
+.single-blog {}
+
+.blog-single {
+
+  // .blog-single__container
+
+  &__container {}
+
+  // .blog-single__inner
+
+  &__inner {
+    margin-top: 120px;
+
+    h1 {
+      color: rgba($color: $mainColor, $alpha: .8);
+      font-size: 35px;
+      line-height: 140%;
+
+      @media screen and (max-width: 520px) {
+        font-size: 30px;
+      }
+    }
+
+    h2 {
+      color: rgba($color: $mainColor, $alpha: .8);
+      font-size: 30px;
+      line-height: 140%;
+
+      @media screen and (max-width: 520px) {
+        font-size: 25px;
+      }
+    }
+
+    h3 {
+      color: rgba($color: $mainColor, $alpha: .8);
+      font-size: 28px;
+      line-height: 140%;
+
+      @media screen and (max-width: 520px) {
+        font-size: 23px;
+      }
+    }
+
+    p {
+      color: rgba($color: $mainColor, $alpha: .8);
+      line-height: 120%;
+    }
+
+    ul {
+      margin-left: 25px;
+
+      li {
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 15px;
+        line-height: 120%;
+        color: rgba($color: $mainColor, $alpha: .8);
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          margin-top: -3px;
+          width: 6px;
+          height: 6px;
+          background-color: rgba($color: $accent, $alpha: 1.0);
+          border-radius: 50%;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

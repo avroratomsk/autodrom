@@ -204,7 +204,7 @@
             if (bodyLockStatus && e.target.closest(".icon-menu")) {
                 bodyLockToggle();
                 document.documentElement.classList.toggle("menu-open");
-                document.querySelector(".header-mobile").classList.toggle("_show");
+                document.querySelector(".modile-menu").classList.toggle("_show");
             }
         }));
     }
@@ -4077,10 +4077,11 @@
             }));
         }
     }), 0);
-    let menuItem = document.querySelectorAll(".menu__item-sub");
+    let menuItem = document.querySelectorAll(".btn_open-submenu");
     if (menuItem) menuItem.forEach((item => {
         item.addEventListener("click", (function(e) {
-            this.classList.toggle("_show");
+            parent = this.closest(".modile-menu__item");
+            parent.classList.toggle("_active");
         }));
     }));
     let buttonsEnroll = document.querySelectorAll(".card-service__btn");

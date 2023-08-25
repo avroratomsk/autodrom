@@ -920,6 +920,11 @@ body {
   transition: 0.3s;
 }
 
+.menu__link i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .sub-menu {
   background-color: #ffffff;
   -webkit-transition: 0.3s;
@@ -936,45 +941,12 @@ body {
   transition: 0.3s;
 }
 
-.header-mobile {
+.modile-menu {
   position: fixed;
   top: 70px;
   left: -100%;
   width: 100%;
-  height: 100%;
-  z-index: 99;
-  background-color: #ffffff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.header-mobile._show {
-  left: 0%;
-}
-
-.header-mobile__inner {
-  padding: 40px 30px;
-  overflow: auto;
-  height: calc(100% - 40px);
-}
-
-.header-mobile__logo {
-  display: block;
-  width: 100px;
-}
-
-.header-mobile__logo img {
-  max-width: 100%;
-}
-
-.header-mobile .menu__list {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.header-mobile .menu__item {
+  height: calc(100% - 70px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -982,46 +954,86 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  z-index: 100;
+  background-color: #ffffff;
+  padding: 50px 30px;
+  overflow-y: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.header-mobile .menu__item._show .sub-menu {
-  overflow: visible;
+.modile-menu._show {
+  left: 0;
+}
+
+.modile-menu__list {
+  margin-bottom: 50px;
+}
+
+.modile-menu__item {
+  padding: 20px;
+  border-bottom: 1px solid rgba(23, 33, 38, 0.05);
+}
+
+.modile-menu__item button {
+  margin-left: 50px;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 2px 10px;
+}
+
+.modile-menu__item._active {
+  border-bottom: 0px;
+}
+
+.modile-menu__item._active .sub-menu {
+  padding: 20px 0px;
   max-height: 1000px;
+  overflow: visible;
+  pointer-events: all;
 }
 
-.header-mobile .menu__link {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  font-size: 25px;
-  padding: 10px 0px;
+.modile-menu__item._active button {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
-.header-mobile .sub-menu {
-  max-height: 0px;
-  overflow: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
+.modile-menu__link {
+  font-size: 18px;
+  color: rgba(23, 33, 38, 0.8);
+  font-weight: 600;
 }
 
-.header-mobile .action-header {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+.modile-menu__label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: rgba(23, 33, 38, 0.8);
+}
+
+.modile-menu__social a {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.modile-menu__btn {
+  background-color: #c80816;
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
   margin-top: 40px;
 }
 
-.header-mobile .action-header__link--social {
-  margin-bottom: 20px;
+.modile-menu .sub-menu {
+  max-height: 0px;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .icon-menu {
@@ -2326,6 +2338,71 @@ body {
   color: #c80816;
   font-size: 16px;
   font-weight: 600;
+}
+
+.blog-single__inner {
+  margin-top: 120px;
+}
+
+.blog-single__inner h1 {
+  color: rgba(23, 33, 38, 0.8);
+  font-size: 35px;
+  line-height: 140%;
+}
+
+.blog-single__inner h2 {
+  color: rgba(23, 33, 38, 0.8);
+  font-size: 30px;
+  line-height: 140%;
+}
+
+.blog-single__inner h3 {
+  color: rgba(23, 33, 38, 0.8);
+  font-size: 28px;
+  line-height: 140%;
+}
+
+.blog-single__inner p {
+  color: rgba(23, 33, 38, 0.8);
+  line-height: 120%;
+}
+
+.blog-single__inner ul {
+  margin-left: 25px;
+}
+
+.blog-single__inner ul li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 15px;
+  line-height: 120%;
+  color: rgba(23, 33, 38, 0.8);
+}
+
+.blog-single__inner ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  background-color: #c80816;
+  border-radius: 50%;
+}
+
+.blog-single__inner img {
+  width: 100%;
+}
+
+.home-page .blog__grid {
+  margin-top: 50px;
+}
+
+.home-page .item-blog {
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
 }
 
 .utp {
@@ -4287,6 +4364,26 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media screen and (min-width: 921px) and (hover: hover) {
+  .menu__item:hover .sub-menu {
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .menu__item:hover .menu__link {
+    color: #c80816;
+  }
+
+  .menu__item:hover .menu__link i {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
 @media screen and (min-width: 921px) {
   .sub-menu {
     opacity: 0;
@@ -4712,6 +4809,18 @@ button.swiper-pagination-bullet {
     height: 55px;
   }
 
+  .blog-single__inner h1 {
+    font-size: 30px;
+  }
+
+  .blog-single__inner h2 {
+    font-size: 25px;
+  }
+
+  .blog-single__inner h3 {
+    font-size: 23px;
+  }
+
   .edge__row:first-child {
     padding: 50px 0px 200px;
   }
@@ -4899,10 +5008,6 @@ button.swiper-pagination-bullet {
     margin-bottom: 15px;
   }
 
-  .header-mobile .action-header__btn {
-    width: 100%;
-  }
-
   .table-repair__caption {
     -ms-grid-columns: 1fr 110px;
     grid-template-columns: 1fr 110px;
@@ -5013,18 +5118,6 @@ button.swiper-pagination-bullet {
 
   .callback-block__button:hover {
     background-color: rgba(200, 8, 22, 0.9);
-  }
-
-  .menu__item:hover .sub-menu {
-    -webkit-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .menu__link:hover {
-    color: #c80816;
   }
 
   .sub-menu__link:hover {

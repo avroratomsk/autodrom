@@ -50,12 +50,13 @@ import { flsModules } from "./modules.js";
 //     }
 // } 
 
-let menuItem = document.querySelectorAll('.menu__item-sub');
+let menuItem = document.querySelectorAll('.btn_open-submenu');
 
 if (menuItem) {
   menuItem.forEach(item => {
     item.addEventListener('click', function (e) {
-      this.classList.toggle('_show')
+      parent = this.closest('.modile-menu__item');
+      parent.classList.toggle('_active')
     })
   })
 }
