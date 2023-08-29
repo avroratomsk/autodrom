@@ -50,6 +50,10 @@
         &:focus {
             border: 1px solid rgba($color: $mainColor, $alpha: .1);
         }
+
+        &.error {
+            border-color: brown;
+        }
     }
 
     // .form-shop__textarea

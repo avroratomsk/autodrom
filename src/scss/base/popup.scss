@@ -133,6 +133,10 @@ body::after {
 
 		font-size: 13px;
 	}
+
+	&.error {
+		border-color: brown !important;
+	}
 }
 
 .popup__submit {
@@ -155,6 +159,10 @@ body::after {
 
 .popup__stoimost {
 	.consult-form__textarea {
+		&.error {
+			border-color: brown;
+		}
+
 		@media screen and (max-width: 425px) {
 			height: 120px;
 			font-size: 13px;
