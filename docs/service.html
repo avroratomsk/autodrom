@@ -6,12 +6,12 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230825151727" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230829091543" />
 	<link rel="shortcut icon" href="favicon.ico" />
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230825151727" rel="stylesheet" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230829091543" rel="stylesheet" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?_v=20230825151727" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?_v=20230829091543" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<style>
 		.utp::before {
@@ -117,13 +117,13 @@
 							<div class="service-slider__container">
 								<h2 class="service-slider__title">Всем новым клиентам мы дарим скидку <b>5% </b>на первое посещение!
 								</h2>
-								<button type="button" class="service-slider__btn">Участвовать</button>
+								<button type="button" class="service-slider__btn btn_service" data-popup=".popup__enroll" data-name="Всем новым клиентам мы дарим скидку 5% на первое посещение!">Участвовать</button>
 							</div>
 						</div>
 						<div class="service-slider__slide swiper-slide" style="background-image: url(img/shop.jpg);">
 							<div class="service-slider__container">
 								<h2 class="service-slider__title">Скидка <b>5%</b> <br> на обслуживание и ремонт</h2>
-								<button type="button" class="service-slider__btn">Участвовать</button>
+								<button type="button" class="service-slider__btn btn_service" data-popup=".popup__enroll" data-name="Скидка 5% на обслуживание и ремонт">Участвовать</button>
 							</div>
 						</div>
 					</div>
@@ -162,7 +162,7 @@
 								<a href="#" class="card-service__title">Ремонт тормозных систем</a>
 								<p class="card-service__price">от <span>500</span> руб.</p>
 								<div class="card-service__btns">
-									<button type="button" class="card-service__btn" data-popup=".popup"><span>Записаться</span></button>
+									<button type="button" class="card-service__btn btn_service" data-popup=".popup" data-name="Ремонт тормозных систем"><span>Записаться</span></button>
 									<a href="single.html" type="button" class="card-service__btn card-service__btn--trnsp"><span>Подробнее</span>
 									</a>
 								</div>
@@ -176,7 +176,7 @@
 								<a href="#" class="card-service__title">Диагностика авто</a>
 								<p class="card-service__price">от <span>500</span> руб.</p>
 								<div class="card-service__btns">
-									<button type="button" class="card-service__btn" data-popup=".popup"><span>Записаться</span></button>
+									<button type="button" class="card-service__btn btn_service" data-popup=".popup"><span>Записаться</span></button>
 									<a href="single.html" type="button" class="card-service__btn card-service__btn--trnsp"><span>Подробнее</span>
 									</a>
 								</div>
@@ -477,8 +477,8 @@
 				<p class="popup__subtitle">и наши менеджеры с вами свяжуться</p>
 				<form action="" class="popup__form">
 					<input type="text" class="popup__input" placeholder="Ваше имя">
-					<input type="text" class="popup__input" placeholder="Ваш номер телефона">
-					<input type="text" class="popup__input _input--hide input__name">
+					<input type="tel" class="popup__input" placeholder="Ваш номер телефона" data-tel-input>
+					<input type="text" class="popup__input  input__name _input--hide">
 					<button type="button" class="popup__submit">Отправить</button>
 				</form>
 			</div>
@@ -495,7 +495,7 @@
 				<p class="popup__subtitle">и наши менеджеры с вами свяжуться</p>
 				<form action="" class="popup__form">
 					<input type="text" class="popup__input" placeholder="Ваше имя">
-					<input type="text" class="popup__input" placeholder="Ваш номер телефона">
+					<input type="tel" class="popup__input" placeholder="Ваш номер телефона" data-tel-input>
 					<button type="button" class="popup__submit">Отправить</button>
 				</form>
 			</div>
@@ -512,7 +512,7 @@
 				<p class="popup__subtitle">и наши менеджеры с вами свяжуться</p>
 				<form action="" class="popup__form">
 					<input type="text" class="popup__input" placeholder="Ваше имя">
-					<input type="text" class="popup__input" placeholder="Ваш номер телефона">
+					<input type="tel" class="popup__input" placeholder="Ваш номер телефона" data-tel-input>
 					<input type="text" class="popup__input" placeholder="Марка авто">
 					<textarea name="" id="" class="consult-form__textarea" placeholder="Опишите подробнее что у вас сломалось"></textarea>
 					<button type="button" class="popup__submit">Отправить</button>
@@ -520,7 +520,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230825151727"></script>
+	<script src="js/app.min.js?_v=20230829091543"></script>
 </body>
 
 </html>

@@ -301,6 +301,14 @@ body {
   }
 }
 
+.input--hide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
 .consult {
   padding: 50px 0px 50px;
   position: relative;

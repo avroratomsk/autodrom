@@ -61,7 +61,7 @@ if (menuItem) {
   })
 }
 
-let buttonsEnroll = document.querySelectorAll('.card-service__btn');
+let buttonsEnroll = document.querySelectorAll('.btn_service');
 
 if (buttonsEnroll) {
   buttonsEnroll.forEach(item => {
