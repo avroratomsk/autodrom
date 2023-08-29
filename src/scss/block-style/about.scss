@@ -42,8 +42,6 @@
     grid-template-rows: repeat(8, 3vw);
     grid-gap: 15px;
 
-    margin-top: 80px;
-
     @media screen and (max-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
