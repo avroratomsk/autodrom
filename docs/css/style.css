@@ -2051,6 +2051,24 @@ body {
   padding-right: calc((100vw - 1320px) / 2);
 }
 
+.contact-page .utp__phone--add {
+  margin-bottom: 20px;
+  border: none;
+}
+
+.contact-page .utp__phone--add p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #962933;
+  margin-bottom: 10px;
+}
+
+.contact-page .utp__phone--add span b {
+  color: #172126;
+}
+
 .form-contact {
   padding-left: 50px;
 }
@@ -2569,6 +2587,38 @@ body {
   color: rgba(23, 33, 38, 0.8);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.utp__phone--add {
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(23, 33, 38, 0.1);
+}
+
+.utp__phone--add p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.utp__phone--add span {
+  font-size: 15px;
+}
+
+.utp__phone--add span b {
+  color: #c80816;
+}
+
+.utp__phone--add span:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .utp__time-work {
@@ -4388,7 +4438,7 @@ button.swiper-pagination-bullet {
 
 @media screen and (min-width: 426px) {
   .contact iframe {
-    height: 550px;
+    height: 650px;
   }
 
   .contact__inner {

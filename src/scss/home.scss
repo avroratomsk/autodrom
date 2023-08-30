@@ -142,6 +142,34 @@
     }
   }
 
+  // .utp__phone--add
+  &__phone--add {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba($color: $mainColor, $alpha: .1);
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 15px;
+
+      b {
+        color: $accent;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
   // .utp__time-work
   &__time-work {
     margin-bottom: 30px;
