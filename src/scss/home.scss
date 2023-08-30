@@ -15,6 +15,11 @@
   position: relative;
   height: 90vh;
 
+  @media screen and (max-width: 601px) {
+    height: 100%;
+    padding: 150px 0px 50px;
+  }
+
   // .utp__car
   &__car {
     position: absolute;
@@ -141,6 +146,9 @@
   &__time-work {
     margin-bottom: 30px;
 
+    display: flex;
+    justify-content: space-between;
+
     p {
       font-size: 15px;
       color: rgba($color: $mainColor, $alpha: .8);
@@ -156,7 +164,21 @@
         margin-bottom: 10px;
       }
     }
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
   }
+
+  // .utp__time-work--wrp
+  &__time-work--wrp {
+    @media screen and (max-width: 600px) {
+      &:last-child {
+        margin-top: 20px;
+      }
+    }
+  }
+
 
   // .utp__addres
 
@@ -1060,6 +1082,10 @@
 
     &:focus {
       border-color: rgba($color: $blue, $alpha: 0.6);
+    }
+
+    &.error {
+      border-color: brown;
     }
   }
 

@@ -3,10 +3,10 @@
   padding: 0px 0px;
 
   iframe {
-    height: 250px;
+    height: 450px;
 
     @media screen and (min-width: 426px) {
-      height: 460px;
+      height: 550px;
     }
   }
 
@@ -85,9 +85,30 @@
     font-weight: 500;
 
     p {
+      margin-left: 28px;
+
       &:not(:last-child) {
         margin-bottom: 5px;
       }
+    }
+  }
+
+  // .contact__time-work--wrp
+  &__time-work--wrp {
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .contact__time-work--title
+  &__time-work--title {
+    font-weight: 600;
+    margin-bottom: 10px !important;
+    margin-left: 0px !important;
+
+    i {
+      margin-right: 10px;
+      color: $accent;
     }
   }
 
