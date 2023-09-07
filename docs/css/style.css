@@ -593,6 +593,7 @@ body {
   font-size: 13px;
   font-weight: 600;
   color: rgba(23, 33, 38, 0.8);
+  padding: 0px 5px;
 }
 
 .breadcrumb p {
@@ -2343,6 +2344,7 @@ body {
   -webkit-box-shadow: 0px 0px 5px rgba(23, 33, 38, 0.1);
           box-shadow: 0px 0px 5px rgba(23, 33, 38, 0.1);
   width: 100%;
+  padding: 0px 25px;
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2350,14 +2352,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: rgba(23, 33, 38, 0.8);
   text-align: center;
   line-height: 140%;
+}
+
+.shop__image {
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
 }
 
 .page-blog .banner__title {
