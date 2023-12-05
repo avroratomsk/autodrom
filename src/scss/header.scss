@@ -3,14 +3,15 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba($color: $white, $alpha: 1.0);
+  background-color: rgba($color: $white, $alpha: 1);
   padding: 10px 0px;
   z-index: 99;
-  box-shadow: 0px 0px 5px rgba($color: $mainColor, $alpha: .3);
+  box-shadow: 0px 0px 5px rgba($color: $mainColor, $alpha: 0.3);
 
   // .header__container
 
-  &__container {}
+  &__container {
+  }
 
   // .header__inner
 
@@ -36,11 +37,13 @@
 
   // .header__menu
 
-  &__menu {}
+  &__menu {
+  }
 
   // .header__action
 
-  &__action {}
+  &__action {
+  }
 }
 
 .action-header {
@@ -52,14 +55,15 @@
   &__link {
     font-size: 16px;
     font-weight: 900;
-    color: rgba($color: $mainColor, $alpha: .8);
+    color: rgba($color: $mainColor, $alpha: 0.8);
     margin-right: 20px;
 
     i {
       font-size: 22px;
     }
 
-    &--social {}
+    &--social {
+    }
 
     &--phone {
       font-weight: 700;
@@ -79,7 +83,7 @@
     background-color: $accent;
     font-weight: 500;
     font-size: 13px;
-    color: rgba($color: $white, $alpha: 1.0);
+    color: rgba($color: $white, $alpha: 1);
 
     @media screen and (max-width: 1205px) {
       padding: 15px 0px;
@@ -89,8 +93,6 @@
 }
 
 .menu {
-
-
   // .menu__list
 
   &__list {
@@ -110,11 +112,11 @@
     flex-wrap: wrap;
 
     &:not(:last-child) {
-      border-right: 1px solid rgba($color: $mainColor, $alpha: .3);
+      border-right: 1px solid rgba($color: $mainColor, $alpha: 0.3);
     }
 
-    @media screen and (min-width:921px) {
-      @media (hover:hover) {
+    @media screen and (min-width: 921px) {
+      @media (hover: hover) {
         &:hover {
           .sub-menu {
             transform: translateY(0px);
@@ -145,7 +147,7 @@
   &__link {
     font-size: 15px;
     font-weight: 600;
-    color: rgba($color: $mainColor, $alpha: .8);
+    color: rgba($color: $mainColor, $alpha: 0.8);
     padding: 0px 13px;
     transition: $animation_speed;
 
@@ -163,7 +165,6 @@
   background-color: $white;
   transition: $animation_speed;
 
-
   @media screen and (min-width: 921px) {
     opacity: 0;
     pointer-events: none;
@@ -174,7 +175,37 @@
     transform: translateY(100px);
   }
 
-  &__item {}
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i {
+      transform: rotate(-90deg);
+      margin-right: 10px;
+    }
+
+    @media screen and (min-width: 921px) {
+      @media (hover: hover) {
+        &:hover {
+          .sub-submenu {
+            transform: translateX(0px);
+            opacity: 1;
+            pointer-events: all;
+          }
+
+          .menu__link {
+            color: $accent;
+
+            i {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
 
   // .sub-menu__link
 
@@ -182,19 +213,53 @@
     display: block;
     padding: 15px 20px;
     font-weight: 600;
-    color: rgba($color: $mainColor, $alpha: .8);
-    border-bottom: 1px solid rgba($color: $mainColor, $alpha: .05);
+    color: rgba($color: $mainColor, $alpha: 0.8);
+    border-bottom: 1px solid rgba($color: $mainColor, $alpha: 0.05);
     transition: $animation_speed;
 
-    @media (hover:hover) {
+    @media (hover: hover) {
       &:hover {
-        background-color: rgba($color: $mainColor, $alpha: .02);
+        background-color: rgba($color: $mainColor, $alpha: 0.02);
       }
     }
   }
 }
 
+.sub-submenu {
+  background-color: $white;
+  transition: $animation_speed;
 
+  @media screen and (min-width: 921px) {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 300px;
+    transform: translateX(100px);
+  }
+  // .sub-submenu__item
+
+  &__item {
+  }
+
+  // .sub-submenu__link
+
+  &__link {
+    display: block;
+    padding: 15px 20px;
+    font-weight: 600;
+    color: rgba($color: $mainColor, $alpha: 0.8);
+    border-bottom: 1px solid rgba($color: $mainColor, $alpha: 0.05);
+    transition: $animation_speed;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: rgba($color: $mainColor, $alpha: 0.02);
+      }
+    }
+  }
+}
 
 //====================================================================================================
 ._pc {
@@ -202,7 +267,6 @@
     display: none;
   }
 }
-
 
 .modile-menu {
   position: fixed;
@@ -222,7 +286,6 @@
     left: 0;
   }
 
-
   // .modile-menu__list
 
   &__list {
@@ -233,7 +296,7 @@
 
   &__item {
     padding: 20px;
-    border-bottom: 1px solid rgba($color: $mainColor, $alpha: .05);
+    border-bottom: 1px solid rgba($color: $mainColor, $alpha: 0.05);
 
     button {
       margin-left: 50px;
@@ -262,13 +325,14 @@
 
   &__link {
     font-size: 18px;
-    color: rgba($color: $mainColor, $alpha: .8);
+    color: rgba($color: $mainColor, $alpha: 0.8);
     font-weight: 600;
   }
 
   // .modile-menu__socials
 
-  &__socials {}
+  &__socials {
+  }
 
   // .modile-menu__label
 
@@ -276,13 +340,12 @@
     font-size: 16px;
     margin-bottom: 10px;
     font-weight: 500;
-    color: rgba($color: $mainColor, $alpha: .8);
+    color: rgba($color: $mainColor, $alpha: 0.8);
   }
 
   // .modile-menu__social
 
   &__social {
-
     a {
       font-size: 30px;
       margin-right: 10px;
@@ -311,22 +374,15 @@
 
     // .sub-menu__item
 
-    &__item {}
+    &__item {
+    }
 
     // .sub-menu__link
 
-    &__link {}
+    &__link {
+    }
   }
 }
-
-
-
-
-
-
-
-
-
 
 //====================================================================================================
 
@@ -373,7 +429,8 @@
       }
 
       &::before,
-      &::after {}
+      &::after {
+      }
 
       &::before {
         top: calc(50% - rem(1));

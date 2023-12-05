@@ -948,7 +948,43 @@ body {
   transition: 0.3s;
 }
 
+.sub-menu__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sub-menu__item i {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-right: 10px;
+}
+
 .sub-menu__link {
+  display: block;
+  padding: 15px 20px;
+  font-weight: 600;
+  color: rgba(23, 33, 38, 0.8);
+  border-bottom: 1px solid rgba(23, 33, 38, 0.05);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sub-submenu {
+  background-color: #ffffff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sub-submenu__link {
   display: block;
   padding: 15px 20px;
   font-weight: 600;
@@ -4583,6 +4619,24 @@ button.swiper-pagination-bullet {
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
   }
+
+  .sub-menu__item:hover .sub-submenu {
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .sub-menu__item:hover .menu__link {
+    color: #c80816;
+  }
+
+  .sub-menu__item:hover .menu__link i {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 
 @media screen and (min-width: 921px) {
@@ -4596,6 +4650,18 @@ button.swiper-pagination-bullet {
     -webkit-transform: translateY(100px);
         -ms-transform: translateY(100px);
             transform: translateY(100px);
+  }
+
+  .sub-submenu {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 300px;
+    -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+            transform: translateX(100px);
   }
 
   .index__car {
@@ -5372,6 +5438,10 @@ button.swiper-pagination-bullet {
   }
 
   .sub-menu__link:hover {
+    background-color: rgba(23, 33, 38, 0.02);
+  }
+
+  .sub-submenu__link:hover {
     background-color: rgba(23, 33, 38, 0.02);
   }
 
